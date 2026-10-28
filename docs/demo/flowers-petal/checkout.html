@@ -1,0 +1,586 @@
+<!--
+Template Name: flowerspetal
+File Name: checkout.html
+Author Name: ThemeVault
+Author URI: https://www.themevault.net/
+License URI: https://www.themevault.net/license/
+Version: 2.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head><meta name="robots" content="noindex, nofollow, noarchive">
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Flowers-Petal</title>
+        <meta name="description" content="">
+        <link rel="icon" href="images/favicon.png"/>
+
+        <!-- Bootstrap 5, Font Awesome 6, then v1's own stylesheets in v1's order -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bs3-defaults.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <link href="fonts/website-font/stylesheet.css" rel="stylesheet">
+        <link href="css/bs5-shim.css" rel="stylesheet">
+        <link href="css/_modern.css" rel="stylesheet">
+    </head>
+    <body id="aboutpage" class="tv-shop-page">
+                <header>
+                            <div class="tv-top-header">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="tv-left-content">
+                                                <ul>
+                                                    <li>
+                                                        <form id="form-currency" method="post" action="#">
+                                                            <div class="dropdown" >
+                                                                <button class="dropbtn">USD <span class="caret"></span></button>
+                                                                <div class="dropdown-content">
+                                                                    <a href="#" class="currency-select" role="button">Dollar</a>
+                                                                    <a href="#" class="currency-select" role="button">Euros</a>
+                                                                </div>
+                                                            </div>
+                                                        </form>
+                                                    </li>
+                                                    <li>
+                                                        <span>Call us now: <a href="tel:+1-202-555-0100">+1-202-555-0100</a></span>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-12">
+                                            <div class="tv-right-content">
+                                                <ul>
+                                                    <li><a href="register.html">Register</a></li>
+                                                    <li><a href="login.html">Login</a></li>
+                                                    <li><a href="wishlist.html">Wishlists<span class="tv-wishlist-items">2</span></a></li>
+                                                    <li>
+                                                        <div id="cart" class="dropdown">
+                                                            <a class="dropdown-toggle" data-bs-toggle="dropdown" href="#"><i class="fas fa-shopping-basket" aria-hidden="true"></i></a>
+                                                            <span class="tv-cart-items">2</span>
+                                                            <div class="dropdown-menu">
+                                                                <div class="dropdown-inner">
+                                                                    <div class="cart_block_list">
+                                                                        <table class="cart">
+                                                                            <tbody>
+                                                                                <tr>
+                                                                                    <td class="product-thumbnail">
+                                                                                        <a href="page-detail.html">
+                                                                                            <img class="img-fluid img-responsive" width="80" height="107" src="images/product1.jpg" alt="product">
+                                                                                        </a>
+                                                                                    </td>
+                                                                                    <td class="product-name">
+                                                                                        <a href="page-detail.html">Tulipa floriade - red</a>
+                                                                                        <br>
+                                                                                        <span class="amount">
+                                                                                            <strong>$10.00</strong>
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td class="product-actions">
+                                                                                        <button type="button" class="remove" title="Remove this item">
+                                                                                            <i class="fas fa-times"></i>
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="product-thumbnail">
+                                                                                        <a href="page-detail.html">
+                                                                                            <img class="img-fluid img-responsive" width="80" height="107" src="images/product2.jpg" alt="">
+                                                                                        </a>
+                                                                                    </td>
+                                                                                    <td class="product-name">
+                                                                                        <a href="page-detail.html">Tulipa floriade - red</a>
+                                                                                        <br>
+                                                                                        <span class="amount">
+                                                                                            <strong>$10.00</strong>
+                                                                                        </span>
+                                                                                    </td>
+                                                                                    <td class="product-actions">
+                                                                                        <button type="button" class="remove" title="Remove this item">
+                                                                                            <i class="fas fa-times"></i>
+                                                                                        </button>
+                                                                                    </td>
+                                                                                </tr>
+                                                                                <tr>
+                                                                                    <td class="actions" colspan="3">
+                                                                                        <div class="actions-continue">
+                                                                                            <a class="tv-site-btn2" href="cart.html">View Cart</a>
+                                                                                            <a class="tv-site-btn2" href="checkout.html">
+                                                                                                Checkout
+                                                                                                <i class="fas fa-angle-right ml-xs"></i>
+                                                                                            </a>
+                                                                                        </div>
+                                                                                    </td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </li>
+                                                </ul>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="tv-bottom-header">
+                                <nav id="menu" class="navbar navbar-default navbar-expand-md">
+                                    <div class="container">
+                                        <div class="navbar-header">
+                                            <button type="button" class="navbar-toggler navbar-toggle" data-bs-toggle="collapse" data-bs-target="#myNavbar" aria-controls="myNavbar" aria-expanded="false" aria-label="Toggle navigation">
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                                <span class="icon-bar"></span>
+                                            </button>
+                                            <a class="navbar-brand" href="index.html" id="logo"><img src="images/logo2.png" alt="logo"></a>
+                                        </div>
+                                        <div class="collapse navbar-collapse" id="myNavbar">
+                                            <ul class="navbar-nav ms-auto navbar-right">
+                                                <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                                <li class="dropdown nav-item">
+                                                    <a class="dropdown-toggle nav-link" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                                                    <div class="dropdown-menu">
+                                                        <div class="dropdown-inner">
+                                                            <ul class="list-unstyled">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 1 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 2 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 3 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 4 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 5 (0)</a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="list-unstyled">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 6 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 7 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 8 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 9 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 10 (0)</a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="list-unstyled">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 11 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 12 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 13 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 14 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 15 (0)</a>
+                                                                </li>
+                                                            </ul>
+                                                            <ul class="list-unstyled">
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 16 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 17 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 18 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 19 (0)</a>
+                                                                </li>
+                                                                <li>
+                                                                    <a class="dropdown-item" href="product.html">Product 20 (0)</a>
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="nav-item"><a class="nav-link" href="blog.html">Blog</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="about.html">About Us</a></li>
+                                                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                                                <li class="nav-item">
+                                                    <div class="search-bar float-end pull-right">
+                                                        <p class="search-btn">
+                                                            <input id="search" type="search" name="search">
+                                                        </p>
+                                                    </div>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </nav>
+                </div>
+                </header>
+        <main>
+            <div class="tv-inner-banner">
+                <div class="inner-page-title">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-12">
+                                <h1 class="cms-page-title">Checkout</h1>
+                                <div id="cms-breadcrumb">
+                                    <ul class="breadcrumb">
+                                        <li>
+                                            <a href="index.html">Home</a>
+                                        </li>
+                                        <li class="active">Checkout</li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        <section class="tv-checkout-block">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <div class="tv-block-heading tv-marginT30">
+                            <h3>Billing Details</h3>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div class="row">
+                            <div class="tv-billling-form tv-colhost">
+                                <div class="col-md-6">
+                                    <fieldset id="account">
+                                        <legend>Your Personal Details</legend>
+                                        <div hidden class="form-group">
+                                            <label class="form-label control-label">Customer Group</label>
+                                            <div class="radio">
+                                                <label>
+                                                    <input type="radio" checked="checked" value="1" name="customer_group_id">
+                                                    Default</label>
+                                            </div>
+                                        </div>
+                                        <div class="form-group required">
+                                            <input type="text" class="form-control" placeholder="First Name" id="input-payment-firstname" value="" name="firstname">
+                                        </div>
+                                        <div class="form-group required">
+                                            <input type="text" class="form-control" placeholder="Last Name" id="input-payment-lastname" value="" name="lastname">
+                                        </div>
+                                        <div class="form-group required">
+                                            <input type="text" class="form-control" placeholder="E-Mail" id="input-payment-email" value="" name="email">
+                                        </div>
+                                        <div class="form-group required">
+                                            <input type="text" class="form-control" placeholder="Telephone" id="input-payment-telephone" value="" name="telephone">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Fax" id="input-payment-fax" value="" name="fax">
+                                        </div>
+                                    </fieldset>
+                                    <fieldset id="password">
+                                        <legend>Your Password</legend>
+                                        <div class="form-group required">
+                                            <input type="password" class="form-control" placeholder="Password" id="input-payment-password" value="" name="password">
+                                        </div>
+                                        <div class="form-group required">
+                                            <input type="password" class="form-control" placeholder="Password Confirm" id="input-payment-confirm" value="" name="confirm">
+                                        </div>
+                                    </fieldset>
+                                </div>
+                                <div class="col-md-6">
+                                    <fieldset id="address" class="required">
+                                        <legend>Your Address</legend>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Company" id="input-payment-company" value="" name="company">
+                                        </div>
+                                        <div class="form-group required">
+                                            <input type="text" class="form-control" placeholder="Address 1" id="input-payment-address-1" value="" name="address_1">
+                                        </div>
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Address 2" id="input-payment-address-2" value="" name="address_2">
+                                        </div>
+                                        <div class="form-group required">
+                                            <input type="text" class="form-control" placeholder="City" id="input-payment-city" value="" name="city">
+                                        </div>
+                                        <div class="form-group required">
+                                            <input type="text" class="form-control" placeholder="Post Code" id="input-payment-postcode" value="" name="postcode">
+                                        </div>
+                                        <div class="form-group required">
+                                            <select class="form-control" id="input-payment-country" name="country_id">
+                                                <option value=""> --- Please Select Country --- </option>
+                                                <option value="1">Afghanistan</option>
+                                                <option value="2">Albania</option>
+                                                <option value="3">Algeria</option>
+                                                <option value="4">American Samoa</option>
+                                                <option value="5">Andorra</option>
+                                                <option value="6">Angola</option>
+                                                <option value="7">Anguilla</option>
+
+                                            </select> 
+                                        </div>
+                                        <div class="form-group required">
+                                            <select class="form-control" id="input-payment-zone" name="zone_id">
+                                                <option value=""> --- Please Select Region / State --- </option>
+                                                <option value="3513">Aberdeen</option>
+                                                <option value="3514">Aberdeenshire</option>
+                                                <option value="3515">Anglesey</option>
+                                                <option value="3516">Angus</option>
+                                                <option value="3517">Argyll and Bute</option>
+                                                <option value="3518">Bedfordshire</option>
+                                            </select>
+                                        </div>
+                                    </fieldset>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="checkbox">
+                            <label for="newsletter">
+                                <input type="checkbox" id="newsletter" value="1" name="newsletter">
+                                I wish to subscribe to the PrintStore online store newsletter.</label>
+                        </div>
+                        <div class="checkbox">
+                            <label>
+                                <input type="checkbox" checked="checked" value="1" name="shipping_address">
+                                My delivery and billing addresses are the same.</label>
+                        </div>
+                        <div class="buttons clearfix">
+                            <div class="float-end tv-agree-row"><label class="tv-agree"><input type="checkbox" value="1" name="agree"> I have read and agree to the <a class="agree" href="faq.html#terms"><b>Privacy Policy</b></a></label>
+                                <button type="submit" class="btn tv-site-btn2"><span>Continue</span></button>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-12 tv-your-order">
+                        <div class="tv-block-heading tv-marginT30">
+                            <h3>Your order</h3>
+                        </div>
+                        <div class="table-responsive">
+                            <table class="table table-bordered table-hover">
+                                <thead>
+                                    <tr>
+                                        <th class="text-start text-left">Product Name</th>
+                                        <th class="text-start text-left">Model</th>
+                                        <th class="text-end text-right">Quantity</th>
+                                        <th class="text-end text-right">Unit Price</th>
+                                        <th class="text-end text-right">Total</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="text-start text-left"><a href="single-product.html"><img src="images/product1.jpg" class="img-fluid img-responsive tv-w-50"></a>
+                                        </td>
+                                        <td class="text-start text-left">Product 1</td>
+                                        <td class="text-end text-right">1</td>
+                                        <td class="text-end text-right">$10.00</td>
+                                        <td class="text-end text-right">$10.00</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot>
+                                    <tr>
+                                        <td class="text-end text-right" colspan="4"><strong>Sub-Total:</strong></td>
+                                        <td class="text-end text-right">$10.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-end text-right" colspan="4"><strong>Flat Shipping Rate:</strong></td>
+                                        <td class="text-end text-right">$0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-end text-right" colspan="4"><strong>Eco Tax (0.00):</strong></td>
+                                        <td class="text-end text-right">$0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-end text-right" colspan="4"><strong>VAT (0%):</strong></td>
+                                        <td class="text-end text-right">$0.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="text-end text-right" colspan="4"><strong>Total:</strong></td>
+                                        <td class="text-end text-right">$10.00</td>
+                                    </tr>
+                                </tfoot>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="col-12">
+                        <div id="payment" class="tv-checkout-payment">
+                            <ul>
+                                <li class="tv-payment-methods payment-method-bank">
+                                    <input id="payment-method-bank" class="input-radio" type="radio"  checked="checked" name="payment_method">
+                                    <label for="payment-method-bank"> Direct Bank Transfer </label>
+                                    <div class="payment-method-decs">
+                                        <p>Make your payment directly into our bank account. Please use your Order ID as the payment reference. Your order won’t be shipped until the funds have cleared in our account.</p>
+                                    </div>
+                                </li>
+                                <li class="tv-payment-methods payment-method-cheque">
+                                    <input id="payment-method-cheque" class="input-radio" type="radio" value="cheque" name="payment_method">
+                                    <label for="payment-method-cheque"> Check Payments </label>
+                                    <div class="payment-method-decs">
+                                        <p>Please send a check to Store Name, Store Street, Store Town, Store State / County, Store Postcode.</p>
+                                    </div>
+                                </li>
+                                <li class="tv-payment-methods payment-method-cash">
+                                    <input id="payment-method-cash" class="input-radio" type="radio" value="cod" name="payment_method">
+                                    <label for="payment-method-cash"> Cash on Delivery </label>
+                                    <div class="payment-method-decs">
+                                        <p>Pay with cash upon delivery.</p>
+                                    </div>
+                                </li>
+                                <li class="tv-payment-methods payment-method-paypal">
+                                    <input id="payment-method-paypal" class="input-radio" type="radio" value="paypal" name="payment_method">
+                                    <label for="payment-method-paypal">
+                                        PayPal
+                                    </label>
+                                    <ul class="tv-paypal-list">
+                                        <li><span><i class="fab fa-cc-visa" aria-hidden="true"></i></span></li>
+                                        <li><span><i class="fab fa-cc-mastercard" aria-hidden="true"></i></span></li>
+                                        <li><span><i class="fab fa-cc-amex" aria-hidden="true"></i></span></li>
+                                        <li><span><i class="fab fa-cc-discover" aria-hidden="true"></i></span></li>
+                                    </ul>
+                                    <div class="payment-method-decs">
+                                        <p>Pay via PayPal; you can pay with your credit card if you don’t have a PayPal account.</p>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="buttons">
+                            <div class="float-end pull-right">
+                                <a href="thank-you.html" class="btn tv-site-btn2"><span>Confirm Order</span></a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        </main>
+            <footer class="tv-paddingT100">
+                        <div class="footer-content bgcolor-purple">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-lg-5 col-md-12 col-12">
+                                        <div class="footer-about-desc block">
+                                            <h4 class="title_block">About us</h4>
+                                            <div class="block_content">
+                                                <p>A retail florist and design studio on Mill Street. Everything cut to order, wrapped by hand and delivered the same day within the city — by us, not a courier.</p>
+                                            </div>
+                                        </div>
+                                        <div class="social_block">
+                                            <ul class="social-links">
+                                                <li>
+                                                    <a href="https://www.facebook.com/" target="_blank" rel="noopener" aria-label="Facebook">
+                                                        <em class="fab fa-facebook-f" aria-hidden="true"></em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://twitter.com/" target="_blank" rel="noopener" aria-label="Twitter">
+                                                        <em class="fab fa-twitter" aria-hidden="true"></em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.youtube.com/" target="_blank" rel="noopener" aria-label="YouTube">
+                                                        <em class="fab fa-youtube" aria-hidden="true"></em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.linkedin.com/" target="_blank" rel="noopener" aria-label="LinkedIn">
+                                                        <em class="fab fa-linkedin-in" aria-hidden="true"></em>
+                                                    </a>
+                                                </li>
+                                                <li>
+                                                    <a href="https://www.pinterest.com/" target="_blank" rel="noopener" aria-label="Pinterest">
+                                                        <em class="fab fa-pinterest-p" aria-hidden="true"></em>
+                                                    </a>
+                                                </li>
+                                                <li class="last">
+                                                    <a href="https://www.instagram.com/" target="_blank" rel="noopener" aria-label="Instagram">
+                                                        <em class="fab fa-instagram" aria-hidden="true"></em>
+                                                    </a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-4 col-12">
+                                        <div class="footer-block block">
+                                            <h4 class="title_block">Services</h4>
+                                            <ul class="list-group" style="">
+                                                <li>
+                                                    <a title="Our Policy" href="faq.html#policy">Our Policy</a>
+                                                </li>
+                                                <li>
+                                                    <a title="Gurantees" href="faq.html#freshness">Gurantees</a>
+                                                </li>
+                                                <li>
+                                                    <a title="Terms & Conditions" href="faq.html#terms">Terms & Conditions</a>
+                                                </li>
+                                                <li>
+                                                    <a title="Shipping & Returns" href="faq.html#delivery">Shipping & Returns</a>
+                                                </li>
+                                                <li>
+                                                    <a title="F.A.Qs" href="faq.html">F.A.Qs</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-2 col-lg-2 col-md-3 col-12">
+                                        <div class="footer-block block">
+                                            <h4 class="title_block">Account</h4>
+                                            <ul class="list-group" style="">
+                                                <li>
+                                                    <a title="Login" href="login.html">Login</a>
+                                                </li>
+                                                <li>
+                                                    <a title="Register" href="register.html">Register</a>
+                                                </li>
+                                                <li>
+                                                    <a title="Wishlist" href="wishlist.html">Wishlist</a>
+                                                </li>
+                                                <li>
+                                                    <a title="Cart" href="cart.html">Cart</a>
+                                                </li>
+                                                <li>
+                                                    <a title="Checkout" href="checkout.html">Checkout</a>
+                                                </li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <div class="col-xl-3 col-lg-3 col-md-5 col-12">
+                                        <div class="block">
+                                            <h4 class="title_block">Opening time</h4>
+                                            <div class="timing-block">
+                                                <p>Monday to Friday .... 8 am - 10 pm</p>
+                                                <p>Saturday & Sunday .... 10 am - 9 pm</p>
+                                                <p>Holiday is off</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-copyright bgcolor-purple">
+                            <div class="container">
+                                <div class="row">
+                                    <div class="text-center col-xl-12 col-lg-12 col-md-12 col-12 col-sp-12">  
+                                        &copy; <span id="tv-year">2026</span> All right reserved.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </footer>
+            <button type="button" id="back-to-top" aria-label="Back to top"><i class="fas fa-angle-up" aria-hidden="true"></i></button>
+
+        <script src="js/bootstrap.bundle.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </body>
+</html>

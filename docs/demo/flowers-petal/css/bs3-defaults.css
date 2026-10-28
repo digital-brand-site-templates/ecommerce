@@ -1,0 +1,110 @@
+/* ==========================================================================
+   Bootstrap 3 defaults — what BS3 gave every design for free and BS5 changed.
+   Loaded right after bootstrap.min.css, BEFORE the template's own CSS, so the
+   template's rules win over these exactly as they won over Bootstrap 3.
+   Neutral: the same file for every template. Do not add template fixes here.
+   ========================================================================== */
+
+/* Type defaults BS3 supplied: 14px/1.42857 body, 1.1 headings at fixed sizes
+   (BS5: 1.5 body, 1.2 headings, fluid h1-h3 below 1200px). If v1 set its own
+   body size it wins — style.css loads before this file only for the vendor
+   defaults it never restated. */
+body { line-height: 1.42857143; }
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 { line-height: 1.1; margin-bottom: 10px; }
+h1, h2, h3 { margin-top: 20px; }
+h4, h5, h6 { margin-top: 10px; }
+h1, .h1 { font-size: 36px; } h2, .h2 { font-size: 30px; } h3, .h3 { font-size: 24px; }
+h4, .h4 { font-size: 18px; } h5, .h5 { font-size: 14px; } h6, .h6 { font-size: 12px; }
+p { margin: 0 0 10px; }
+a { text-decoration: none; }
+label { font-weight: 700; margin-bottom: 5px; }
+blockquote { padding: 10px 20px; margin: 0 0 20px; font-size: 14px; border-left: 5px solid #eee; }
+
+/* Container: BS3's fixed 750/970/1170 one tier up (col-md(992) -> col-lg),
+   15px gutters (BS5: 12px — every column was 3px narrower and 3px right). */
+.container, .container-fluid { padding-left: 15px; padding-right: 15px; max-width: 100%; }
+.row { --bs-gutter-x: 30px; }
+@media (min-width: 768px)  { .container { max-width: 750px; } }
+@media (min-width: 992px)  { .container { max-width: 970px; } }
+@media (min-width: 1200px) { .container { max-width: 1170px; } }
+
+/* Grid children BS5 pads that BS3 did not, and column hosts that are not .row. */
+.row > :where(:not([class*="col-"]):not(.tv-colhost):not(.container):not(.container-fluid)) { padding-left: 0; padding-right: 0; } /* a .container inside a .row keeps its own gutter (flowerspetal: container-fluid > row > container) */
+.tv-colhost { display: flex; flex-wrap: wrap; }
+.tv-colhost:not(.container):not(.container-fluid) { padding-left: 0; padding-right: 0; } /* a .container that hosts columns directly keeps its gutter (flowerspetal single-blog: container > col-md-9) */
+:where(.tv-colhost) > :where([class*="col-"]) { width: 100%; } /* zero specificity: col-lg-6 etc. still win the width */
+.tv-colhost > [class*="col-"] { position: relative; flex-shrink: 0; max-width: 100%; padding-left: 15px; padding-right: 15px; } /* (0,2,0): survives a template's "* { padding: 0 }" reset, loses to its own .x > [class*=col-] gutter rules */
+:where(.tv-colhost) > :where(:not([class*="col-"])) { width: 100%; }
+
+/* Components BS5 dropped or restyled. */
+.form-group { margin-bottom: 15px; }
+.form-control { height: 34px; padding: 6px 12px; font-size: 14px; line-height: 1.42857143; color: #555; border: 1px solid #ccc; border-radius: 4px; box-shadow: inset 0 1px 1px rgba(0,0,0,.075); }
+textarea.form-control { height: auto; }
+.btn { font-size: 14px; line-height: 1.42857143; padding: 6px 12px; border-radius: 4px; }
+.progress { height: 20px; margin-bottom: 20px; background-color: #f5f5f5; border-radius: 4px; box-shadow: inset 0 1px 2px rgba(0,0,0,.1); }
+.progress-bar { background-color: #337ab7; font-size: 12px; line-height: 20px; }
+.media { display: flex; align-items: flex-start; margin-top: 15px; } .media:first-child { margin-top: 0; }
+.media-body { flex: 1; } .media-left, .media > .float-start { padding-right: 10px; } .media-heading { margin-top: 0; margin-bottom: 5px; }
+.pagination { display: inline-block; padding-left: 0; margin: 20px 0; border-radius: 4px; }
+.pagination > li { display: inline; }
+.pagination > li > a { position: relative; float: left; padding: 6px 12px; margin-left: -1px; line-height: 1.42857143; background-color: #fff; border: 1px solid #ddd; }
+.pagination > li:first-child > a { margin-left: 0; border-radius: 4px 0 0 4px; } .pagination > li:last-child > a { border-radius: 0 4px 4px 0; }
+.breadcrumb { padding: 8px 15px; margin-bottom: 20px; list-style: none; background-color: #f5f5f5; border-radius: 4px; }
+.breadcrumb > li { display: inline-block; }
+.breadcrumb > li + li::before { content: "/\00a0"; padding: 0 5px; color: #ccc; }
+.breadcrumb > .active { color: #777; }
+.list-inline { padding-left: 0; margin-left: -5px; list-style: none; }
+.list-inline > li { display: inline-block; padding-left: 5px; padding-right: 5px; }
+.owl-dots .owl-dot, .owl-nav button { background: transparent; border: 0; padding: 0; font: inherit; }
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small { font-size: 65%; font-weight: 400; line-height: 1; color: #777; }
+.checkbox, .radio { position: relative; display: block; margin-top: 10px; margin-bottom: 10px; }
+.checkbox label, .radio label { min-height: 20px; padding-left: 20px; margin-bottom: 0; font-weight: 400; cursor: pointer; }
+.checkbox input[type="checkbox"], .radio input[type="radio"] { position: absolute; margin-left: -20px; margin-top: 4px; }
+.checkbox-inline, .radio-inline { position: relative; display: inline-block; padding-left: 20px; margin-bottom: 0; font-weight: 400; vertical-align: middle; cursor: pointer; }
+.checkbox-inline input[type="checkbox"], .radio-inline input[type="radio"] { position: absolute; margin-left: -20px; margin-top: 4px; }
+.checkbox-inline + .checkbox-inline, .radio-inline + .radio-inline { margin-top: 0; margin-left: 10px; }
+.table { --bs-table-bg: transparent; margin-bottom: 20px; }
+.table > :not(caption) > * > * { padding: 8px; line-height: 1.42857143; vertical-align: top; border-top: 1px solid #ddd; border-bottom: 0; }
+.table > thead > tr > th { vertical-align: bottom; border-bottom: 2px solid #ddd; }
+.btn-lg { padding: 10px 16px; font-size: 18px; line-height: 1.3333333; border-radius: 6px; }
+.btn-sm, .btn-group-sm > .btn { padding: 5px 10px; font-size: 12px; line-height: 1.5; border-radius: 3px; }
+.btn-group-lg > .btn { padding: 10px 16px; font-size: 18px; line-height: 1.3333333; border-radius: 6px; }
+.btn-group > .btn:not(:first-child) { margin-left: -1px; }
+.table-bordered, .table-bordered > :not(caption) > * > * { border: 1px solid #ddd; }
+.table-striped > tbody > tr:nth-of-type(odd) > * { background-color: #f9f9f9; --bs-table-accent-bg: transparent; }
+.btn-secondary { color: #333; background-color: #fff; border-color: #ccc; } /* BS3 .btn-default (port maps it here) */
+.btn-secondary:hover, .btn-secondary:focus { color: #333; background-color: #e6e6e6; border-color: #adadad; }
+.btn-primary { background-color: #337ab7; border-color: #2e6da4; } .btn-primary:hover { background-color: #286090; border-color: #204d74; }
+.btn-success { background-color: #5cb85c; border-color: #4cae4c; } .btn-info { background-color: #5bc0de; border-color: #46b8da; }
+.btn-warning { color: #fff; background-color: #f0ad4e; border-color: #eea236; } .btn-danger { background-color: #d9534f; border-color: #d43f3a; }
+/* Bootstrap 3's stock navbar (.navbar-default): the light grey bar with a
+   #e7e7e7 border and #777 links that many templates never restyled. */
+.navbar { min-height: 50px; margin-bottom: 20px; border: 1px solid transparent; }
+@media (min-width: 768px) { .navbar { border-radius: 4px; } }
+.navbar-default { background-color: #f8f8f8; border-color: #e7e7e7; }
+.navbar > .container, .navbar > .container-fluid { padding-left: 15px; padding-right: 15px; flex-wrap: wrap; } /* BS5 strips the gutter inside a collapsed navbar; a .row in there then overflows 15px */
+.navbar-default .navbar-brand { color: #777; }
+/* selectors written EXACTLY as Bootstrap 3 wrote them (element a, not
+   .nav-link): the template's own ".navbar-default .navbar-nav > li > a"
+   must beat these by source order, and a class token here would out-rank it */
+.navbar-default .navbar-nav > li > a { color: #777; }
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > .active > a { color: #333; background-color: transparent; }
+.navbar-expand-lg .navbar-nav .nav-link { padding: 15px; line-height: 20px; } /* (0,3,0) — above BS5's own .5rem rule, below any v1 rule on "> li > a" */
+@media (max-width: 767.98px) { .navbar-expand-lg .navbar-nav .nav-link { padding: 10px 15px; } }
+.navbar-toggler { border: 1px solid #ddd; border-radius: 4px; padding: 9px 10px; margin: 8px 0; background: transparent; box-shadow: none; }
+/* BS3 collapsed header: brand left, toggle floated RIGHT on the same line (v1's markup puts the button first; inside BS5's flex navbar the header shrink-wrapped and the button stacked above the logo) */
+.navbar-header { flex: 0 0 100%; display: flex; align-items: center; }
+.navbar-header .navbar-toggler { order: 2; margin-left: auto; }
+.navbar-expand-md .navbar-header, .navbar-expand-lg .navbar-header { flex: 0 0 auto; }
+/* BS3: the brand inside a .container pulls 15px left; the collapsed header bleeds 15px each side */
+@media (min-width: 768px) { .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand { margin-left: -15px; } }
+@media (max-width: 767.98px) { .navbar-expand-md .navbar-header { flex: 0 0 calc(100% + 30px); margin: 0 -15px; } }
+@media (max-width: 991.98px) { .navbar-expand-lg .navbar-header { flex: 0 0 calc(100% + 30px); margin: 0 -15px; } }
+.navbar-toggler .icon-bar { display: block; width: 22px; height: 2px; border-radius: 1px; background: #888; }
+.navbar-toggler .icon-bar + .icon-bar { margin-top: 4px; }
+.dropdown-menu { font-size: 14px; color: #333; border-radius: 4px; }
+.dropdown-item { padding: 3px 20px; color: #333; font-weight: 400; line-height: 1.42857143; }
+.dropdown-item:hover, .dropdown-item:focus { color: #262626; background-color: #f5f5f5; }
+.dropdown-toggle::after { display: none; } /* templates of this vintage draw their own caret icon */
+html { scroll-behavior: smooth; scroll-padding-top: 60px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }

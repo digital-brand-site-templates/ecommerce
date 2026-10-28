@@ -1,0 +1,284 @@
+/* ==========================================================================
+   Bootstrap 5 shim — loaded AFTER the template's CSS: the hooks main.js
+   uses, then this template's own fixes (each one names the GATES.md line or
+   owner note it answers). The neutral Bootstrap 3 defaults live in
+   bs3-defaults.css, loaded before style.css — never restate them here.
+   ========================================================================== */
+
+/* Hooks main.js uses. */
+#back-to-top { display: none; position: fixed; right: 20px; bottom: 20px; z-index: 999; width: 44px; height: 44px; border: 0; border-radius: 50%; background: #603940; color: #fff; font: inherit; cursor: pointer; }
+#back-to-top.is-visible { display: block; }
+.tv-form-note { color: #603940; margin: 15px 0 0; font-size: 14px; font-weight: 600; }
+.form-control.is-invalid, select.is-invalid, textarea.is-invalid, input.is-invalid { border-color: #dc3545 !important; }
+.tv-lightbox { position: fixed; inset: 0; z-index: 99999; display: none; align-items: center; justify-content: center; background: rgba(0, 0, 0, .92); }
+.tv-lightbox.is-open { display: flex; }
+.tv-lightbox img { max-width: 92vw; max-height: 84vh; box-shadow: 0 10px 40px rgba(0, 0, 0, .6); }
+.tv-lightbox button { position: absolute; border: 0; background: transparent; color: #fff; font-size: 34px; line-height: 1; cursor: pointer; opacity: .8; padding: 10px; }
+.tv-lb-close { top: 10px; right: 20px; font-size: 42px; } .tv-lb-prev { left: 10px; top: 50%; transform: translateY(-50%); } .tv-lb-next { right: 10px; top: 50%; transform: translateY(-50%); }
+.tv-section-pb { padding-bottom: 80px; } /* for new pages whose last section needs a floor */
+
+/* ==========================================================================
+   This template — every rule below names the gate line or owner note it
+   answers. Start empty; grow it from GATES.md, never from another template.
+   ========================================================================== */
+
+/* ==========================================================================
+   This template
+   ========================================================================== */
+/* One h1 per page: the banner title (was h2) and the home slide title (was h2), drawn exactly as the h2 was */
+h1.cms-page-title { font-size: 30px; line-height: 1.1; font-weight: 500; } /* drawn exactly as v1 drew the h2 (BS3 h2), incl. responsive.css steps */
+@media (max-width: 767px) { h1.cms-page-title { font-size: 26px; } }
+@media (max-width: 400px) { h1.cms-page-title { font-size: 22px; } }
+button.tv-was-a { font-family: inherit; letter-spacing: 1px; text-align: inherit; cursor: pointer; } /* an <a> in v1 (inherited body letter-spacing); a button now */
+#tv-Carousel .carousel-caption h1 { font-size: 40px; text-transform: uppercase; margin: 15px 0 20px; font-family: 'Playfair Display', serif; font-weight: 500; }
+/* bxSlider (thumbnails, related products) -> a scroll-snap strip; the plugin no longer ships */
+.thumbnails .image-additional, .related-product-slider { }
+.product-gallery .thumbnails { display: flex; flex-wrap: wrap; gap: 12px; }
+.product-gallery .thumbnails .main-image-set { flex: 0 0 100%; }
+.product-gallery .thumbnails .image-additional { flex: 0 0 78px; margin: 0 !important; }
+.product-gallery .thumbnails .image-additional img { width: 100%; height: 78px; object-fit: cover; display: block; cursor: pointer; }
+.related-product-slider.tv-colhost { flex-wrap: nowrap; overflow-x: auto; scroll-snap-type: x mandatory; }
+.related-product-slider > li { scroll-snap-align: start; }
+/* compare.html: v1 drew a 1px #ddd frame around the responsive table wrapper */
+@media (max-width: 767.98px) { .tv-compare-table.table-responsive { border: 1px solid #ddd; } } /* BS3 framed .table-responsive below 768px */
+/* widths that were inline */
+.tv-w-80 { width: 80px; } .tv-w-100 { width: 100px; } .tv-w-120 { width: 120px; } .tv-w-150 { width: 150px; } .tv-w-200 { width: 200px; } .tv-w-50 { width: 50px; } .tv-w-60 { width: 60px; } .tv-w-70 { width: 70px; } .tv-w-90 { width: 90px; }
+
+/* ---- new pages: thank-you, account, faq, 404 (built from v1's .tv-register-block / .tv-block-tagline / .login-form / .table vocabulary) ---- */
+.tv-thankyou-steps { list-style: none; padding: 0; margin: 20px 0 30px; }
+.tv-thankyou-steps li { padding: 10px 0 10px 32px; position: relative; border-bottom: 1px dashed #e5e5e5; }
+.tv-thankyou-steps li i { position: absolute; left: 0; top: 12px; width: 22px; height: 22px; border-radius: 50%; background: #e36c5b; color: #fff; font-size: 11px; text-align: center; line-height: 22px; }
+.tv-thankyou .tv-site-btn2 + .tv-site-btn2 { margin-left: 10px; }
+.tv-order-summary { margin-top: 30px; }
+.tv-order-summary .table td { border-color: #eee; }
+.tv-order-summary .table tr:last-child td { border-top: 2px solid #603940; }
+.tv-order-facts { display: grid; grid-template-columns: 110px 1fr; gap: 8px 14px; margin: 20px 0; }
+.tv-order-facts dt { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #999; }
+.tv-order-facts dd { margin: 0; }
+.tv-order-help { font-size: 13px; color: #666; }
+.tv-order-help a { color: #e36c5b; }
+.tv-account { padding-bottom: 60px; }
+.tv-account-nav { border: 1px solid #eee; border-radius: 4px; padding: 20px; }
+.tv-account-user { display: flex; gap: 12px; align-items: center; padding-bottom: 16px; margin-bottom: 12px; border-bottom: 1px solid #eee; }
+.tv-account-user img { width: 48px; height: 48px; border-radius: 50%; object-fit: cover; }
+.tv-account-user small { display: block; color: #999; }
+.tv-account-nav .nav a { display: block; padding: 10px 6px; color: #333; border-radius: 3px; }
+.tv-account-nav .nav a i { width: 22px; color: #e36c5b; }
+.tv-account-nav .nav a:hover, .tv-account-nav .nav a.active { background: #f6f0f1; color: #603940; }
+.tv-account-content .tab-pane { display: none; } .tv-account-content .tab-pane.active { display: block; }
+.tv-orders-table td, .tv-orders-table th { vertical-align: middle; font-size: 13px; }
+.tv-orders-table a { color: #e36c5b; text-decoration: underline; }
+.tv-status { display: inline-block; font-size: 11px; letter-spacing: .5px; text-transform: uppercase; padding: 3px 10px; border-radius: 30px; background: #eee; color: #555; margin-left: 6px; }
+.tv-status-done { background: #e6f4ea; color: #1e7b3a; } .tv-status-making { background: #fdece9; color: #c0392b; }
+.tv-address-card { border: 1px solid #eee; border-radius: 4px; padding: 20px; margin-bottom: 20px; }
+.tv-address-card strong { display: block; margin-bottom: 8px; }
+.tv-address-card p { color: #666; margin-bottom: 12px; }
+.tv-btn-sm { padding: 6px 14px; font-size: 12px; }
+.login-form label:not(.visually-hidden) { display: block; font-size: 13px; font-weight: 500; margin-bottom: 4px; }
+.tv-faq .tv-block-tagline { margin-top: 30px; }
+.tv-faq .tv-block-tagline:first-child { margin-top: 0; }
+.tv-faq .accordion-item { border: 1px solid #eee; border-radius: 3px; margin-bottom: 8px; }
+.tv-faq .accordion-header { margin: 0; }
+.tv-faq .accordion-button { font-family: inherit; font-size: 14px; font-weight: 500; color: #333; background: #fafafa; padding: 14px 18px; box-shadow: none; }
+.tv-faq .accordion-button:not(.collapsed) { color: #fff; background: #603940; }
+.tv-faq .accordion-button:not(.collapsed)::after { filter: brightness(0) invert(1); }
+.tv-faq .accordion-button:focus { box-shadow: 0 0 0 2px rgba(227, 108, 91, .35); }
+.tv-faq .accordion-body { padding: 16px 18px; line-height: 1.8; font-size: 13px; }
+.tv-faq-aside { border: 1px solid #eee; border-radius: 4px; padding: 24px; margin-top: 0; }
+.tv-faq-contact { list-style: none; padding: 0; margin: 16px 0 20px; }
+.tv-faq-contact li { padding: 8px 0; border-bottom: 1px dashed #e5e5e5; font-size: 13px; }
+.tv-faq-contact i { color: #e36c5b; width: 22px; }
+.tv-faq-contact a { color: #333; }
+.tv-404-code { font-family: 'Playfair Display', serif; font-size: 96px; line-height: 1; color: #e36c5b; margin: 0 0 6px; }
+.tv-404-search { display: flex; gap: 10px; max-width: 460px; margin: 0 0 20px; }
+.tv-404-search .form-control { flex: 1; height: 44px; }
+.tv-404-search .tv-site-btn2 { margin: 0; }
+.tv-404 .tv-site-btn2 + .tv-site-btn2 { margin-left: 10px; }
+.tv-404-links { list-style: none; padding: 0; margin: 0; }
+.tv-404-links li { padding: 10px 0; border-bottom: 1px dashed #e5e5e5; font-size: 13px; color: #666; }
+.tv-404-links a { color: #603940; font-weight: 500; text-decoration: underline; }
+.tv-thankyou, .tv-account, .tv-faq, .tv-404 { padding-bottom: 60px; } /* only the new pages; v1 sections end flush */
+@media (max-width: 991.98px) { .tv-faq-aside, .tv-account-nav { margin-top: 30px; } }
+
+/* ==========================================================================
+   Owner review round 1
+   ========================================================================== */
+/* 1) mini cart: the remove control is a button now; v1 drew a bare × */
+#cart .remove, .tv-cart-items .remove { background: none; border: 0; padding: 0 4px; color: #e36c5b; font-size: 14px; line-height: 1; cursor: pointer; }
+#cart .remove:hover { color: #603940; }
+/* 2) currency links inside the hover menu */
+.tv-left-content .dropdown-content a { display: block; }
+/* 3) slider controls, in the template's colours */
+#tv-Carousel .carousel-indicators { bottom: 18px; margin-bottom: 0; }
+#tv-Carousel .carousel-indicators [data-bs-target] { width: 12px; height: 12px; border-radius: 50%; border: 2px solid #fff; background: transparent; opacity: 1; margin: 0 5px; }
+#tv-Carousel .carousel-indicators .active { background: #e36c5b; border-color: #e36c5b; }
+#tv-Carousel .carousel-control-prev, #tv-Carousel .carousel-control-next { width: 56px; opacity: 1; }
+#tv-Carousel .carousel-control-prev i, #tv-Carousel .carousel-control-next i { width: 44px; height: 44px; line-height: 42px; text-align: center; border: 1px solid rgba(255,255,255,.8); border-radius: 50%; background: rgba(96, 57, 64, .45); color: #fff; font-size: 20px; transition: background .3s; }
+#tv-Carousel .carousel-control-prev:hover i, #tv-Carousel .carousel-control-next:hover i { background: #e36c5b; border-color: #e36c5b; }
+@media (max-width: 767.98px) { #tv-Carousel .carousel-control-prev, #tv-Carousel .carousel-control-next { display: none; } }
+/* 4) newsletter form: v1's #subscribe-form rules draw it (float layout, 45px, plum button); only the note needs a home */
+#subscribe-form #subscribe, #subscribe-form #submit { font-family: inherit; }
+#subscribe-form #submit { text-transform: uppercase; }
+.subscribe-form .tv-form-note { clear: both; text-align: center; padding-top: 10px; margin: 0; }
+/* 5) the theme colour where a link became text or a button */
+#cms-breadcrumb .breadcrumb .active, #cms-breadcrumb .breadcrumb .active a { color: #e36c5b; }
+button.tv-was-a, button.tv-site-btn2 { color: #603940; }
+button.tv-was-a:hover, button.tv-site-btn2:hover { color: #fff; }
+.blog-header h3 a { color: #603940; } .blog-header h3 a:hover { color: #e36c5b; }
+/* 6) product toolbar: one aligned row; pagination in the template's colours */
+.tv-content-right > .row:first-child { align-items: center; }
+.tv-content-right .input-group-sm { display: flex; align-items: center; margin-bottom: 0; }
+.tv-content-right .input-group-addon { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; padding: 0 10px; white-space: nowrap; }
+.tv-content-right .input-group-sm .form-control { height: 34px; font-size: 13px; border-radius: 2px; }
+.tv-content-right #compare-total { margin-top: 0; }
+.tv-pagination { margin: 20px 0; }
+.tv-pagination > li > a { color: #603940; border-color: #e5e5e5; padding: 6px 14px; font-size: 13px; }
+.tv-pagination > li.active > a, .tv-pagination > li > a:hover { background: #603940; border-color: #603940; color: #fff; }
+.tv-showing { padding-top: 28px; font-size: 13px; color: #777; }
+/* 7) single product: the main photo (v1 built .photo with JS; main.js does now), tidy tabs and buttons */
+.product-gallery ul .main-image-set a.thumbnail { display: block; height: 400px; padding: 0; overflow: hidden; }
+.product-gallery .tile { position: relative; width: 100%; height: 100%; overflow: hidden; }
+.product-gallery .photo { position: absolute; inset: 0; background-size: cover; background-position: center; transition: transform .35s ease; }
+.product-gallery .thumbnails .image-additional a { display: block; padding: 0; border: 2px solid transparent; }
+.product-gallery .thumbnails .image-additional a.is-current { border-color: #603940; }
+.product-tab-part .nav-tabs { border-bottom: 1px solid #e5e5e5; margin-top: 30px; }
+.product-tab-part .nav-tabs > li > a { display: block; padding: 12px 18px; border: 0; border-bottom: 2px solid transparent; color: #333; font-size: 12px; letter-spacing: 1px; text-transform: uppercase; }
+.product-tab-part .nav-tabs > li.active > a, .product-tab-part .nav-tabs > li > a.active, .product-tab-part .nav-tabs > li > a:hover { border-bottom-color: #603940; color: #603940; }
+.product-tab-part .tab-content { padding: 24px 0; line-height: 1.8; }
+/* 8–13) shop pages: fields, tables and buttons brought to one standard */
+.tv-shop-page main .form-group > input:not([type="checkbox"]):not([type="radio"]):not([type="submit"]), .tv-shop-page main .form-group > select, .tv-shop-page main .form-group > textarea, .tv-shop-page main .form-group > .form-control, .tv-shop-page main .tv-register-grid .form-control { height: 44px; padding: 0 14px; border: 1px solid #ddd; border-radius: 2px; font: inherit; width: 100%; background: #fff; }
+.tv-shop-page main .form-group > textarea { height: auto; padding: 12px 14px; }
+.tv-shop-page main .form-group > input:focus, .tv-shop-page main .form-group > select:focus, .tv-shop-page main .form-group > textarea:focus { border-color: #e36c5b; outline: none; }
+.tv-shop-page .input-group-sm .form-control, .tv-shop-page .qty input { height: 34px; }
+.tv-shop-page .table > thead > tr > th { font-size: 12px; letter-spacing: 1px; text-transform: uppercase; color: #603940; border-bottom: 2px solid #603940; padding: 12px 10px; }
+.tv-shop-page .table > tbody > tr > td { padding: 14px 10px; vertical-align: middle; }
+.tv-shop-page .table img { border-radius: 2px; }
+.tv-shop-page .form-group { margin-bottom: 16px; }
+.tv-shop-page .tv-site-btn2 + .tv-site-btn2 { margin-left: 8px; }
+.tv-shop-page .shipping-calculator-button { background: none; border: 0; padding: 0; color: #e36c5b; text-decoration: underline; font: inherit; cursor: pointer; }
+.tv-ship-calc { display: flex; gap: 8px; margin-top: 12px; }
+.tv-ship-calc .tv-site-btn2 { margin: 0; white-space: nowrap; }
+.tv-shop-page .btn-danger { background: #e36c5b; border-color: #e36c5b; }
+.tv-shop-page .alert { border-radius: 2px; }
+.tv-register-grid .form-group { margin-bottom: 16px; }
+.register-form, .login-form { max-width: 720px; margin-left: auto; margin-right: auto; }
+.tv-register-block .tv-block-tagline p { max-width: 640px; margin: 0 auto 10px; }
+.tv-compare-table .table > tbody > tr > td:first-child { font-weight: 600; color: #603940; width: 180px; background: #faf7f8; }
+.tv-compare-table .table img { max-width: 120px; }
+/* 14 / 16) section titles: room below them, the underline under the words (see _modern.css) */
+.tv-block-tagline h2 { margin-bottom: 22px; }
+.tv-block-tagline p { margin-bottom: 10px; }
+/* 17) 404 */
+.tv-404 .tv-block-tagline h2 { margin-top: 10px; }
+.tv-404-links li:last-child { border-bottom: 0; }
+
+/* ==========================================================================
+   Owner review round 1b — cart, checkout, wishlist, compare
+   ========================================================================== */
+.tv-shop-page .cart-table .table > tbody > tr > td { vertical-align: middle; }
+.tv-shop-page .cart-qtn-btn .input-group { max-width: 120px; }
+.tv-shop-page .coupon .input-text { height: 44px; padding: 0 14px; border: 1px solid #ddd; border-radius: 2px; width: 200px; max-width: 100%; font: inherit; }
+.tv-shop-page .coupon .input-text:focus { border-color: #e36c5b; outline: none; }
+.tv-shop-page .coupon { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+.tv-shop-page .coupon .float-end { margin-left: auto; }
+.tv-shop-page .tv-site-btn2:disabled { opacity: 1; cursor: pointer; }
+.tv-agree-row { display: flex; align-items: center; gap: 16px; flex-wrap: wrap; }
+.tv-agree { display: inline; margin: 0; cursor: pointer; line-height: 1.6; }
+.tv-agree input { margin-right: 6px; vertical-align: -1px; }
+.tv-compare-table .table > thead > tr > th { color: #fff; border-bottom: 0; }
+/* 7) product gallery: v1's 2px plum frame with the Bootstrap 3 thumbnail's 4px white gap, on the main photo and every thumbnail */
+.product-gallery ul .main-image-set a.thumbnail { padding: 4px; border: 2px solid #603940; background: #fff; }
+.product-gallery .thumbnails .image-additional a { padding: 4px; border: 2px solid #603940; background: #fff; }
+.product-gallery .thumbnails .image-additional a.is-current { border-color: #e36c5b; }
+.product-gallery .thumbnails .image-additional img { height: 66px; }
+.product-tab-part .nav-tabs > li.active > a, .product-tab-part .nav-tabs > li > a.active { font-weight: 600; }
+.product-tab-part .nav-tabs > li:not(.active) > a:not(.active) { border-bottom-color: transparent; color: #333; font-weight: 400; }
+/* 14) blog post: the like control was an <a> in v1 and is a <button> now — drawn as the text it sits in, with a heart */
+.entry-like .nectar-love { background: none; border: 0; padding: 0; margin: 0; font: inherit; color: #e36c5b; text-align: start; letter-spacing: inherit; line-height: inherit; cursor: pointer; vertical-align: baseline; }
+.entry-like .nectar-love::before { content: "\f004"; font-family: "Font Awesome 6 Free"; font-weight: 400; margin-right: 5px; color: #e36c5b; }
+.entry-like .nectar-love.is-liked::before { font-weight: 900; }
+.entry-like .nectar-love:hover { color: #e36c5b; }
+/* 6) product toolbar: v1's one-line bar (dark 'Sort By:' / 'Show:' addons, 30px selects) — the shop-page field polish above must not reach it */
+.tv-shop-page main .tv-content-right .form-group { margin-bottom: 15px; } /* BS3 form-group: the rows breathe when the bar wraps on a tablet */
+.tv-shop-page main .tv-content-right .form-group.input-group { display: flex; flex-wrap: nowrap; align-items: stretch; }
+.tv-shop-page main .tv-content-right .form-group.input-group > .input-group-addon { display: flex; align-items: center; font-size: 11px; line-height: 11px; letter-spacing: 1px; text-transform: none; padding: 8px 12px; white-space: nowrap; border-radius: 0; }
+.tv-shop-page main .tv-content-right .form-group.input-group > select.form-control { height: 30px; width: 1%; flex: 1 1 auto; font-size: 12px; line-height: 18px; padding: 5px 10px; border-radius: 0; margin: 0; }
+/* 20) navbar-expand-md: the BS3 link padding the defaults file keys on -expand-lg */
+.navbar-expand-md .navbar-nav .nav-link { padding: 15px; line-height: 20px; }
+@media (max-width: 767.98px) { .navbar-expand-md .navbar-nav .nav-link { padding: 10px 15px; } }
+/* 7b) menu link colours: BS5 paints the active link near-black; the theme's coral for active/hover, and v1's white links on the plum phone bar */
+#menu .navbar-nav > li > a.active, #menu .navbar-nav > li > a:hover, #menu .navbar-nav > li > a:focus, #menu .navbar-nav > li.dropdown.show > a { color: #e36c5b; }
+@media (max-width: 767.98px) {
+  #menu .navbar-nav > li > a, #menu .navbar-nav > li > a.active { color: #fff; }
+  #menu .navbar-nav > li > a:hover, #menu .navbar-nav > li > a:focus, #menu .navbar-nav > li.dropdown.show > a { color: #e36c5b; }
+  #menu .navbar-header .navbar-toggler { margin-right: 15px; }
+}
+/* 31) the search box grows 92px on focus; on a tablet that pushed the menu onto a second line (v1's floated bar overlapped the logo instead) */
+#menu .navbar-collapse, #menu .navbar-nav { flex-wrap: nowrap; }
+@media (min-width: 768px) and (max-width: 991.98px) { .search-btn input[type="search"]:focus { width: 96px; } }
+/* 34) mega menu: on a touch screen v1's :hover rule kept the menu open after the tap that should close it — the tap (Bootstrap's .show) decides there;
+   inside the phone menu the three columns were a 160px strip (v1's width:30%) — full width, one column per row, on the plum bar */
+@media (hover: none) { #menu .dropdown:hover .dropdown-menu:not(.show) { display: none; } }
+@media (max-width: 767.98px) {
+  #menu .dropdown-menu { width: 100%; margin: 0; left: 0; position: static; float: none; background: rgba(255, 255, 255, .08); border: 0; border-radius: 0; box-shadow: none; }
+  #menu .dropdown-inner { display: block; width: 100%; padding: 6px 0; }
+  #menu .dropdown-inner ul { display: block; padding: 0; }
+  #menu .dropdown-inner a { min-width: 0; padding: 8px 15px; text-align: center; color: #fff; }
+  #menu .dropdown-inner a:hover { color: #e36c5b; background: transparent; }
+}
+/* 35/36) product page on a phone: Qty and Scent each on their own line, tabs flowing inline, related products one per row */
+@media (max-width: 767.98px) {
+  .form-group.product-add, .product-scent { display: block; width: 100%; margin: 0 0 14px; }
+  .product-add label, .product-scent > label { display: block; float: none; line-height: 1.4; margin: 0 0 6px; }
+  #input_div { display: flex; }
+  .selector-wrapper { display: block; }
+  .selector-wrapper .single-option-selector { width: 100%; }
+  .product-tab-part .nav-tabs { display: block; text-align: center; }
+  .product-tab-part .nav-tabs > li { display: inline-block; float: none; }
+  .product-tab-part .nav-tabs > li > a { display: inline-block; padding: 10px 12px; }
+  .related-product-slider.tv-colhost { flex-wrap: wrap; overflow: visible; }
+  .related-product-slider > li { flex: 0 0 100%; max-width: 100%; }
+}
+/* 33) 404 on a phone: the search button level with its field, less air above the number */
+.tv-404-search { align-items: stretch; }
+.tv-404-search .tv-site-btn2 { display: inline-flex; align-items: center; height: 44px; padding: 0 18px; line-height: 1; }
+@media (max-width: 767.98px) { .tv-404 .tv-block-tagline { margin-top: 0; } .tv-404 .tv-404-code { margin-top: -20px; } }
+/* 25) product thumbnails: four across whatever the column width (the 4th wrapped on a tablet) */
+.product-gallery .thumbnails .image-additional { flex: 0 0 calc(25% - 9px); max-width: 78px; }
+.product-gallery .thumbnails .image-additional img { height: auto; aspect-ratio: 1 / 1; }
+@media (max-width: 575.98px) { .product-gallery .thumbnails .image-additional { flex-basis: calc(25% - 10px); } }
+/* 24) best sellers on a tablet: the 170px sidebar cannot seat the photo and the stars side by side — stack them below 992px */
+@media (max-width: 991.98px) {
+  .product_list_block .media { display: block; }
+  .product_list_block .product-image-container { float: none !important; margin: 0 0 8px; }
+  .product_list_block .media-body { display: block; }
+  .product_list_block .star_content { white-space: nowrap; }
+}
+/* 26/27/29) the new pages on a tablet: two columns from 768px, text left (v1's responsive.css centres every tagline below 992px — right for its own bands, wrong for a timeline and a summary table) */
+@media (max-width: 991.98px) {
+  .tv-thankyou .tv-block-tagline, .tv-404 .tv-block-tagline, .tv-account .tv-block-tagline { text-align: left; }
+  .tv-thankyou .tv-block-tagline h2::after, .tv-404 .tv-block-tagline h2::after, .tv-account .tv-block-tagline h2::after { left: 0; transform: none; }
+  .tv-thankyou .tv-block-tagline p, .tv-404 .tv-block-tagline p { font-size: 14px; }
+  .tv-thankyou .tv-site-btn2, .tv-404 .tv-site-btn2 { margin-top: 10px; }
+  .tv-orders-table { min-width: 0; }
+  .tv-account-nav { margin-top: 0; margin-bottom: 30px; display: flex; flex-wrap: wrap; align-items: center; gap: 8px 24px; padding: 16px 20px; }
+  .tv-account-user { padding: 0; margin: 0; border: 0; }
+  .tv-account-nav .nav { display: flex; flex-direction: row !important; flex-wrap: wrap; gap: 4px; margin: 0; }
+  .tv-account-nav .nav a { padding: 8px 10px; }
+  .tv-orders-table td, .tv-orders-table th { font-size: 12px; padding: 8px 6px; }
+}
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .tv-order-summary { margin-top: 0; }
+  .tv-thankyou .tv-site-btn2 + .tv-site-btn2, .tv-404 .tv-site-btn2 + .tv-site-btn2 { margin-left: 6px; }
+}
+/* 11) search: the results heading sat on the button */
+#button-search + h4 { margin-top: 36px; padding-top: 24px; border-top: 1px solid #eee; }
+.tv-orders-table { min-width: 560px; }
+/* 17) 404: responsive.css shrinks every tagline <p> below 992px — the big number is one */
+.tv-404 .tv-block-tagline p.tv-404-code { font-size: 96px !important; line-height: 1 !important; }
+@media (max-width: 767.98px) { .tv-404 .tv-block-tagline p.tv-404-code { font-size: 72px !important; } }
+@media (max-width: 767.98px) {
+  .tv-shop-page .actions .float-end, .tv-shop-page .continue-btn .float-end, .tv-shop-page .buttons .float-end { float: none !important; margin-left: 0; }
+  .tv-agree-row { justify-content: flex-start; }
+  footer .row > [class*="col-"] + [class*="col-"] { margin-top: 24px; }
+}

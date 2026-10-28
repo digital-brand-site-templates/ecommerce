@@ -2,6 +2,36 @@
   "category": "ecommerce",
   "templates": [
     {
+      "name": "Flowers-Petal",
+      "folder": "flowers-petal",
+      "version": "2.0.0",
+      "description": "Flowers-Petal \u2013 static HTML/Bootstrap eCommerce website template.",
+      "idealFor": [
+        "florists and flower shops",
+        "online flower and bouquet delivery",
+        "wedding and event floral designers"
+      ],
+      "requiredClientInputs": [
+        "shopName",
+        "logoUrl",
+        "primaryColorHex",
+        "contactEmail",
+        "phoneNumber",
+        "deliveryArea",
+        "productCatalog",
+        "productImages"
+      ],
+      "preview": "flowers-petal/preview.png",
+      "orderNumber": "TVORD17731623",
+      "license": {
+        "templateOrderAmount": 0.0,
+        "creditRemovalPermitted": true,
+        "accountLicense": [
+          "TVORD30331596 Pro \u2014 Lifetime"
+        ]
+      }
+    },
+    {
       "name": "Styl-into",
       "folder": "styl-into",
       "version": "2.0.0",

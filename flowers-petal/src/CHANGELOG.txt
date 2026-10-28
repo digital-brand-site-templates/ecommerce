@@ -1,0 +1,46 @@
+FlowersPetal — Responsive eCommerce Florist Website Template
+=============================================================
+
+Version 2.0 — 2026
+-------------------
+
+A rebuild on a modern stack: Bootstrap 5, vanilla JavaScript, four new pages
+the fifteen-page shop pointed at but never had, two HTML emails, and a light
+modernisation in the template's own plum and coral.
+
+NEW PAGES AND EMAILS
+- thank-you.html — the order-confirmation page checkout never had: what
+  happens next, the order summary, delivery and card-message details.
+- account.html — orders, addresses and account details; login and register
+  land here.
+- faq.html — delivery windows and costs, freshness and care, returns,
+  payment, weddings and terms; the footer's Policy / Guarantees / Terms /
+  Shipping links point into it.
+- 404.html — with a search box and the pages people actually want.
+- email-order.html + email-newsletter.html — an order confirmation and a
+  subscriber welcome, inline-styled and table-based for Gmail, Outlook and
+  Apple Mail.
+
+STACK
+- Bootstrap 3.3.6 + jQuery -> Bootstrap 5, vanilla JS. bxSlider (product
+  thumbnails, related products) replaced with a scroll strip; the Bootstrap
+  carousel, tooltips, the quantity stepper and the thumbnail swap are plain
+  JavaScript. Playfair Display and Poppins self-hosted (v1 fetched them live
+  from Google); Font Awesome 4 -> 6; 551 KB of legacy eot/ttf/otf dropped.
+
+FIXES ALONG THE WAY
+- Every page now has one <h1> and a meta description (the original had
+  neither on any of its 15 pages); the breadcrumb no longer links "About"
+  to the blog.
+- 294 dead links repaired, including links to three pages that were never in
+  the package (page-detail, shop, page-blog-left-detail).
+- Every form has labelled, named fields and validates with a confirmation
+  (login, register, contact, comment, newsletter, search, shipping
+  calculator — which had no target at all in v1).
+- 104 lorem-ipsum blocks replaced with real florist copy; 45 inline styles
+  moved to classes.
+
+MODERNISATION
+- An additive `_modern.css` layer: product-tile hover, visible keyboard
+  focus, a short brand underline on section titles — nothing moves; delete
+  the file to get the original look back.

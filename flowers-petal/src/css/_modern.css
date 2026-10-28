@@ -1,0 +1,22 @@
+/* Light modernisation layer — v2.0. Loaded last; purely additive. Delete this
+   file (and its <link>) to get the pixel-for-pixel original. Motion, depth
+   and focus only: no layout, colour or type changes. */
+.product-thumb, .tv-blog-list, .tv-team-list .team-member { transition: transform .35s ease, box-shadow .35s ease; }
+.product-thumb:hover { transform: translateY(-4px); box-shadow: 0 14px 30px rgba(96, 57, 64, .14); }
+.product-thumb .image img { transition: transform .6s ease; }
+.product-thumb:hover .image img { transform: scale(1.04); }
+.tv-site-btn, .tv-site-btn2 { transition: box-shadow .3s ease, background-color .3s ease, color .3s ease; }
+.tv-site-btn:hover, .tv-site-btn2:hover { box-shadow: 0 6px 18px rgba(227, 108, 91, .3); }
+a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible, select:focus-visible { outline: 2px solid #e36c5b; outline-offset: 2px; }
+/* underline: text-align follows — left for left-aligned titles, centred for centred ones, right for right-aligned */
+.tv-block-tagline h2 { position: relative; padding-bottom: 12px; }
+.tv-block-tagline h2::after { content: ""; position: absolute; left: 0; bottom: 0; width: 40px; height: 3px; border-radius: 2px; background: #e36c5b; }
+.text-center .tv-block-tagline h2::after, .tv-block-tagline.text-center h2::after { left: 50%; transform: translateX(-50%); }
+.text-end .tv-block-tagline h2::after, .tv-block-tagline.text-end h2::after { left: auto; right: 0; }
+@media (prefers-reduced-motion: reduce) {
+    .product-thumb, .product-thumb .image img, .tv-site-btn, .tv-site-btn2 { transition: none; }
+    .product-thumb:hover, .product-thumb:hover .image img { transform: none; }
+}
+
+/* responsive.css centres every tagline below 992px; the underline goes with the words */
+@media (max-width: 991px) { .tv-block-tagline h2::after, .text-end .tv-block-tagline h2::after, .tv-block-tagline.text-end h2::after { left: 50%; right: auto; transform: translateX(-50%); } }

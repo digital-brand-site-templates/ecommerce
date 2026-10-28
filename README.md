@@ -8,5 +8,6 @@ Static website templates for the eCommerce category.
 
 Preview gallery: https://digital-brand-site-templates.github.io/ecommerce/
 
+- [Flowers-Petal](flowers-petal/)
 - [Styl-into](styl-into/)
 - [Time-center](time-center/)

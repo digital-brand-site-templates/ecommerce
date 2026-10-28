@@ -1,0 +1,327 @@
+/*
+Template Name: flowerspetal
+File Name: responsive.css
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/
+*/
+
+@media (max-width: 1199px){
+    .tv-right-content .dropdown-menu {
+        left: -300px;
+    }
+    .tv-about-desc h2, .tv-block-tagline h2 {
+        font-size: 28px;
+    }
+    .tv-marginT30 {
+        margin-top: 20px;
+    }
+    .tv-site-btn, .tv-site-btn2{
+        margin-top: 0;
+    }
+    .tv-block-tagline .tv-site-btn2, .cart_block_list .tv-site-btn2, .buttons .tv-site-btn2{
+        margin-top: 20px;
+    }
+    .product-thumb .caption {
+        padding: 0;
+    }
+    .product-list .item-desc {
+        font-size: 12px;
+        line-height: 21px;
+        margin: 10px 0 15px;
+    }
+    .tv-contact-details a, .tv-contact-details p {
+        font-size: 16px;
+    }
+}
+@media (max-width: 991px){
+    .tv-top-header {
+        font-size: 12px;
+    }
+    .tv-right-content ul li a {
+        padding: 0 1pc;
+    }
+    .tv-right-content ul li a::after{
+        top:6px;
+    }
+    .navbar-default .navbar-nav > li > a{
+        font-size: 12px;
+        margin-right: 0px;
+    }
+    #menu .dropdown-menu {
+        left: -350px;
+    }
+    #menu .dropdown-inner a {
+        min-width: 160px;
+    }
+    .tv-right-content .dropdown-menu{
+        min-width: 350px;
+    }
+    #tv-Carousel .carousel-caption{
+        padding: 30px;
+    }
+    #tv-Carousel .carousel-caption h4 {
+        font-size: 16px;
+    }
+    #tv-Carousel .carousel-caption h2 {
+        font-size: 30px;
+        margin: 10px 0 15px;
+    }
+    #tv-Carousel .carousel-caption > p {
+        font-size: 12px;
+        line-height: 20px;
+        width: 90%;
+    }
+    section {
+        padding-top: 80px;
+    }
+    .tv-paddingTB100{
+        padding: 80px 15px;
+    }
+    .tv-paddingT100{
+        padding-top: 80px;
+    }
+    .tv-marginT30 {
+        margin-top: 0;
+    }
+    .tv-about-block, .tv-block-heading, .tv-block-tagline, .tv-product-block .product-thumb .caption, .footer-about-desc{
+        text-align: center;
+    }
+    .tv-block-heading h3::after {
+        height: 1px;
+        margin-top: 20px;
+        width: 100%;
+    }
+    .tv-about-block .pull-right {
+        float: none !important;
+        text-align: center;
+    }
+    .tv-grid figure {
+        float: none;
+        margin: 20px auto;
+        text-align: center;
+        width: 70%;
+    }
+    .tv-product-block .product-thumb .caption {
+        padding: 30px 0 0;
+    }
+    .tv-block-tagline p, #subscribe-form #submit{
+        font-size: 13px;
+    }
+    .social-links {
+        margin-bottom: 50px;
+        text-align: center;
+    }
+    .box-category .menu li > a, .product-description p{
+        font-size: 12px;
+    }
+    .product-thumb .caption h4 {
+        font-size: 16px;
+    }
+    .product-thumb .price {
+        font-size: 14px;
+    }
+    .product_img_link img {
+        margin-bottom: 15px;
+    }
+    .overlay-inner a {
+        font-size: 14px;
+        height: 40px;
+        line-height: 40px;
+        width: 40px;
+    }
+    .product-list .product-thumb .caption{
+        padding: 0px 0 0 !important;
+    }
+    .product-list .product-thumb .caption{
+        text-align: left;
+    }
+    .product-gallery .thumbnails .image-additional {
+        margin-left: 10px;
+    }
+    .product-scent > label {
+        clear: both;
+        margin-left: 0;
+    }
+    .product-scent {
+        display: inline-block;
+        margin-top: 10px;
+    }
+    .tv-site-btn, .tv-site-btn2{
+        padding: 14px 30px 12px !important;
+    }
+    .text-shipping {
+        margin-bottom: 20px;
+    }
+    #tab-description p, #tab-Shipping-Return {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .tv-contact-details a, .tv-contact-details p {
+        font-size: 14px;
+    }
+    .tv-register-block .tv-block-tagline {
+        margin-top: 20px;
+    }
+}
+@media (max-width: 767px){
+    .tv-top-header{
+        text-align: center;
+        padding: 20px 0;
+    }
+    .tv-right-content {
+        margin-top: 20px;
+        text-align: center;
+    }
+    .navbar-default .navbar-brand {
+        margin-left: 15px;
+    }
+    .navbar-default .navbar-toggle{
+        background-color: #e36c5b;
+        border-color: #e36c5b;
+    }
+    .navbar-default .navbar-toggle .icon-bar {
+        background-color: #fff;
+    }
+    .navbar-default .navbar-toggle:focus, .navbar-default .navbar-toggle:hover {
+        background-color: #603940;
+        border-color: #603940;
+    }
+    .tv-about-desc h2, .tv-block-tagline h2 {
+        font-size: 26px;
+    }
+    #menu .dropdown-inner ul {
+        display: block;
+    }
+    #menu .dropdown-menu {
+        width:30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .navbar-default .navbar-nav > li > a, #menu .dropdown-inner a, .block, .tv-blog-details{
+        text-align: center;
+    }
+    .navbar-default .navbar-nav > li > a, #menu .dropdown-inner a{
+        color:#fff;
+    }
+    .navbar-nav {
+        background: #603940;
+    }
+    .navbar-default .navbar-collapse, .navbar-default .navbar-form{
+        border-color: transparent;
+    }
+    .navbar .pull-right{
+        float: none !important;
+        text-align: center;
+    }
+    .cms-page-title {
+        font-size: 26px;
+    }
+    .product-scent {
+        display: inline-block;
+        margin-left: 20px;
+        margin-top: 0;
+    }
+}
+@media (max-width: 500px){
+    #tv-Carousel .carousel-caption h2 {
+        font-size: 22px;
+        margin: 10px 0;
+    }
+    #tv-Carousel .carousel-caption h4 {
+        font-size: 12px;
+    }
+    #tv-Carousel .carousel-caption > p {
+        font-size: 11px;
+        line-height: 17px;
+    }
+    .tv-about-desc h2, .tv-block-tagline h2 {
+        font-size: 22px;
+    }
+    .tv-about-desc p{
+        font-size: 12px;
+    }
+}
+@media (max-width: 400px){
+    .width-100{
+        width:100%;
+    }
+    .width-50{
+        width: 50%;
+    }
+    .tv-right-content ul li a {
+        padding: 0 0.5pc;
+    }
+    .tv-right-content .dropdown-menu {
+        left: -240px;
+        min-width: 300px;
+    }
+    .tv-site-btn, .tv-site-btn2 {
+        padding: 12px 25px 10px !important;
+        font-size: 11px;
+    }
+    .navbar-brand > img {
+        display: block;
+        width: 85%;
+    }
+    #tv-Carousel .carousel-caption h2 {
+        font-size: 14px;
+        font-weight: 600;
+        margin: 10px 0;
+    }
+    #tv-Carousel .carousel-caption > p{
+        display: none;
+    }
+    #tv-Carousel .carousel-caption{
+        padding: 20px;
+    }
+    .tv-about-desc h2, .tv-block-tagline h2 {
+        font-size: 20px;
+    }
+    .brand-image {
+        margin-bottom: 20px;
+    }
+    #subscribe-form #submit, #subscribe-form #subscribe, #subscribe-form{
+        width:100%;
+    }
+    .tv-inner-banner{
+        height: 180px;
+    }
+    .cms-page-title {
+        font-size: 22px;
+    }
+    .product-tab-part .nav-tabs > li > a {
+        display: inline-block;
+        font-size: 12px;
+        margin-bottom: 10px;
+        padding: 10px;
+        position: relative;
+        text-transform: uppercase;
+    }
+    .product-scent{
+        margin-left: 0;
+    }
+    .blog-header h3 {
+        font-size: 16px;
+    }
+    .blog-content {
+        font-size: 12px;
+        line-height: 22px;
+    }
+    .tv-comment-list .media-body{
+        display: block;
+        margin-top: 10px;
+        vertical-align: top;
+        width: 100%;
+    }
+    .tv-comment-list .media-left{
+        display: block;
+    }
+    .tv-comment-list .media-left img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tv-team-details h4{
+        font-size: 15px;
+    }
+}

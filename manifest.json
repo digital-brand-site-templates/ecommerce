@@ -1,0 +1,57 @@
+{
+  "category": "ecommerce",
+  "templates": [
+    {
+      "name": "Styl-into",
+      "folder": "styl-into",
+      "version": "2.0.0",
+      "description": "Styl-into \u2013 static HTML/Bootstrap eCommerce website template.",
+      "idealFor": [
+        "fashion boutiques",
+        "online clothing stores",
+        "apparel brands"
+      ],
+      "requiredClientInputs": [
+        "storeName",
+        "primaryColorHex",
+        "logoUrl",
+        "contactEmail"
+      ],
+      "preview": "styl-into/preview.png",
+      "orderNumber": "TVORD56531616",
+      "license": {
+        "templateOrderAmount": 0.0,
+        "creditRemovalPermitted": true,
+        "accountLicense": [
+          "TVORD30331596 Pro \u2014 Lifetime"
+        ]
+      }
+    },
+    {
+      "name": "Time-center",
+      "folder": "time-center",
+      "version": "2.0.0",
+      "description": "Time-center \u2013 static HTML/Bootstrap eCommerce website template.",
+      "idealFor": [
+        "watch retailers",
+        "jewelry stores",
+        "luxury accessory boutiques"
+      ],
+      "requiredClientInputs": [
+        "storeName",
+        "primaryColorHex",
+        "logoUrl",
+        "contactEmail"
+      ],
+      "preview": "time-center/preview.png",
+      "orderNumber": "TVORD44331605",
+      "license": {
+        "templateOrderAmount": 0.0,
+        "creditRemovalPermitted": true,
+        "accountLicense": [
+          "TVORD30331596 Pro \u2014 Lifetime"
+        ]
+      }
+    }
+  ]
+}

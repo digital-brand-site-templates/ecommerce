@@ -1,0 +1,569 @@
+<!--
+Template Name: wrap-d-style
+File Name: account.html
+Author Name: ThemeVault
+Author URI: https://www.themevault.net/
+License URI: https://www.themevault.net/license/
+Version: 2.0
+-->
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>My account</title>
+        <meta name="description" content="Your orders, addresses, account details and password.">
+        <link rel="icon" href="images/favicon.png"/>
+
+        <!-- Bootstrap 5, Font Awesome 6, then v1's own stylesheets in v1's order -->
+        <link href="css/bootstrap.min.css" rel="stylesheet">
+        <link href="css/bs3-defaults.css" rel="stylesheet">
+        <link href="css/fontawesome.min.css" rel="stylesheet">
+        <link href="css/owl.carousel.min.css" rel="stylesheet">
+        <link href="css/style.css" rel="stylesheet">
+        <link href="css/responsive.css" rel="stylesheet">
+        <link href="css/bs5-shim.css" rel="stylesheet">
+        <link href="css/_modern.css" rel="stylesheet">
+    </head>
+    <body class="tv-preload">
+        <div class="mypage">
+            <div class="tv-left-canvas tv-left-canvas-left">
+
+        <header>
+                <div class="header-layout">
+                                    <div id="tv-top-head">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-md-12">
+                                                    <div class="tv-login-related float-end pull-right hidden-sm hidden-xs">
+                                                        <ul class="list-inline tv-top-link-bar">
+                                                            <li><a href="#" id="wishlist-total" title="Wish List (0)"><i class="fas fa fa-heart"></i> <span class="hidden-xs hidden-sm hidden-md">(0)</span></a></li>
+                                                            <li><a href="cart.html">Shopping Cart</a></li>
+                                                            <li>  <a href="register.html">Register</a></li>
+                                                            <li>  <a href="login.html">Login</a></li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="tv-show-mobile hidden-lg hidden-md float-end pull-right">
+                                                        <div class="tv-mobile-user float-start pull-left">
+                                                            <div class="tv-menu-toggle">
+                                                                <i class="fas fa fa-user"></i>
+                                                            </div>
+                                                            <div class="tv-inner-toggle">
+                                                                <div class="login links">
+                                                                    <a href="register.html">Register</a>
+                                                                    <a href="login.html">Login</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <div class="tv-mobile-access float-start pull-left">
+                                                            <div class="tv-menu-toggle">
+                                                                <i class="fas fa fa-list"></i>
+                                                            </div>
+                                                            <div class="tv-inner-toggle">
+                                                                <ul class="links float-start pull-left">
+                                                                    <li><a class="wishlist" href="" id="tv-mobile-wishlist-total"><i class="fas fa fa-heart"></i>Wish List (0)</a></li>
+                                                                    <li><a class="shoppingcart" href=""><i class="fas fa fa-shopping-bag"></i>Shopping Cart</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </div> 
+                                                    </div>
+                                                    <div class="tv-lang-curr-related float-start pull-left">
+                                                        <div class="btn-group box-language">
+                                                            <div class="float-start pull-left">
+                                                                <form id="form-language">
+                                                                    <div class="btn-group dropdown">
+                                                                        <button class="btn-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static">
+                                                                            <img src="images/icons/uk.png" alt="English" title="English">
+                                                                            <span class="hidden-xs">Language</span> <i class="fas fa fa-angle-down"></i></button>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li><button class="btn btn-link w-100 btn-block language-select" type="button" name="en-gb"><img src="images/icons/uk.png" alt="English" title="English"> English</button></li>
+                                                                            <li><button class="btn btn-link w-100 btn-block language-select" type="button" name="arabi"><img src="images/icons/arebic.png" alt="Arabic" title="Arabic"> Arabic</button></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                        <div class="btn-group box-currency">
+                                                            <div class="float-start pull-left">
+                                                                <form id="form-currency">
+                                                                    <div class="btn-group dropdown">
+                                                                        <button class="btn-link dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static">
+                                                                            <strong>$</strong>
+                                                                            <span class="hidden-xs">Currency</span> <i class="fas fa fa-angle-down"></i></button>
+                                                                        <ul class="dropdown-menu">
+                                                                            <li><button class="currency-select btn-link w-100 btn-block" type="button" name="EUR">€ Euro</button></li>
+                                                                            <li><button class="currency-select btn-link w-100 btn-block" type="button" name="GBP">£ Pound Sterling</button></li>
+                                                                            <li><button class="currency-select btn-link w-100 btn-block" type="button" name="USD">$ US Dollar</button></li>
+                                                                        </ul>
+                                                                    </div>
+                                                                </form>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tv-main-header">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="logo inner col-xl-3 col-lg-3 col-md-4 col-12">
+                                                    <div class="tv-logo">
+                                                        <!--<a href="index.html"><img src="images/logo.png" alt="logo"></a>-->
+                                                        <a href="index.html">wrap<span>d-</span><span class="small-text">Style</span></a>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-5 col-12 header-search">
+                                                    <div class="search" style="display: none"><i class="fas fa fa-search"></i></div>
+                                                    <div id="search" class="input-group searchtoggle">
+                                                        <div class="sort sort hidden-sm hidden-xs">
+                                                            <select name="category_id" class="form-control">
+                                                                <option value="0">All Categories</option>
+                                                                <option value="1">Makeup</option>
+                                                                <option value="2">Skin care</option>
+                                                                <option value="3">lystony</option>
+                                                                <option value="4">Bath &amp; Body</option>
+                                                                <option value="5">Sun Care</option>
+                                                                <option value="6">Bronzers</option>
+                                                                <option value="7">Accessories</option>
+                                                                <option value="8">Tools</option>
+                                                                <option value="9">Gifts</option>
+                                                            </select>
+                                                        </div>
+                                                        <div id="searchbox" style="display: block;" class="">
+                                                            <input name="search" value="" placeholder="Search Products Here" class="form-control form-control-lg input-lg search-autocomplete ui-autocomplete-input" autocomplete="off" type="text">
+                                                            <span class="input-group-btn">
+                                                                <button type="button" class="btn btn-secondary btn-default btn-lg"><span class="search">Search</span></button>
+                                                            </span>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-3 hidden-xs">
+                                                    <div class="tv-header-right">
+                                                        <div class="headertopright">
+                                                            <div class="text-image">
+                                                                <img src="images/icons/phone-call.png" alt="icon"> 
+                                                            </div>
+                                                            <div class="text2">
+                                                                <div class="cms-data-info">
+                                                                    <div class="text2-dec">Information Service</div>
+                                                                    <a href="tel:+1-202-555-0100" class="text-capitalize">1-202-555-0100</a>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div id="tv-header-nav" class="hidden-xs hidden-sm">
+                                        <div class="container">
+                                            <div class="row">
+                                                <div class="col-xl-9 col-lg-9 col-md-12 col-12">
+                                                    <div id="tv-main-nav" class="hidden-sm hidden-xs">
+                                                        <nav id="tv-mega-menu" class="navbar navbar-expand-lg">
+                                                            <div class="navbar-header">
+                                                                <button type="button" class="btn btn-navbar navbar-toggler navbar-toggle" data-bs-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation"><i class="fas fa fa-bars"></i></button>
+                                                            </div>
+                                                            <div class="collapse navbar-collapse navbar-ex1-collapse">
+                                                                <ul class="navbar-nav">
+                                                                    <li class="dropdown nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                                                                    <li class="dropdown nav-item"><a class="nav-link" href="product.html">Store</a>
+                                                                        <div class="dropdown-menu" style="width:850px">
+                                                                            <div class="dropdown-menu-inner">
+                                                                                <div class="row">
+                                                                                    <div class="mega-col col-12 col-md-12 col-lg-4"> 
+                                                                                        <div class="mega-col-inner">
+                                                                                            <div class="tv-widget">
+                                                                                                <h5 class="widget-heading title">Men</h5>
+                                                                                                <div class="">
+                                                                                                    <ul class="content">
+                                                                                                        <li><a href="#"><span>Fragrance</span></a></li>
+                                                                                                        <li><a href="#"><span>Makeup</span></a></li>
+                                                                                                        <li><a href="#"><span>Skin care</span></a></li>
+                                                                                                        <li><a href="#"><span>lystony</span></a></li>
+                                                                                                        <li><a href="#"><span>Bath &amp; Body</span></a></li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="tv-widget">
+                                                                                                <h5 class="widget-heading title">Beauty</h5>
+                                                                                                <div class="">
+                                                                                                    <ul class="content">
+                                                                                                        <li><a href="#"><span>Sun Care &amp; Bronzers</span></a></li>
+                                                                                                        <li><a href="#"><span>Accessories</span></a></li>
+                                                                                                        <li><a href="#"><span>Tools &amp; Accessories</span></a></li>
+                                                                                                        <li><a href="#"><span>Gifts &amp; Gift Sets</span></a></li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="mega-col col-12 col-md-12 col-lg-4"> 
+                                                                                        <div class="mega-col-inner">
+                                                                                            <div class="tv-widget">
+                                                                                                <h5 class="widget-heading title">Women</h5>
+                                                                                                <div class="">
+                                                                                                    <ul class="content">
+                                                                                                        <li><a href="#"><span>Fragrance</span></a></li>
+                                                                                                        <li><a href="#"><span>Makeup</span></a></li>
+                                                                                                        <li><a href="#"><span>Skin care</span></a></li>
+                                                                                                        <li><a href="#"><span>lystony</span></a></li>
+                                                                                                        <li><a href="#"><span>Bath &amp; Body</span></a></li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                            <div class="tv-widget">
+                                                                                                <h5 class="widget-heading title">Make up</h5>
+                                                                                                <div class="">
+                                                                                                    <ul class="content">
+                                                                                                        <li>
+                                                                                                            <a href="#"> <span>Fragrance</span></a>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            <a href="#"><span>Shaving</span></a>
+                                                                                                        </li>
+                                                                                                        <li>
+                                                                                                            <a href="#"><span>Sun care</span></a>
+                                                                                                        </li>
+                                                                                                    </ul>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                    <div class="mega-col col-12 col-md-12 col-lg-4 sidebar"> 
+                                                                                        <div class="mega-col-inner">
+                                                                                            <div class="tv-widget">
+                                                                                                <h5 class="widget-heading title">Sale off</h5>
+                                                                                                <div class="tv-widget-product-list">
+                                                                                                    <div class="tv-widget-inner list">
+                                                                                                        <div class="tv-product product-block clearfix">
+                                                                                                            <div class="product-block">
+                                                                                                                <div class="image">
+                                                                                                                    <div class="product-img img">
+                                                                                                                        <a class="img" title="Mars Mule" href="single-product.html">
+                                                                                                                            <img class="img-fluid img-responsive" src="images/8-92x107.jpg" title="Mars Mule" alt="Mars Mule">
+                                                                                                                        </a>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                                <div class="product-meta">
+                                                                                                                    <h6 class="name"><a href="single-product.html">Mars Mule</a></h6>
+                                                                                                                    <div class="price">
+                                                                                                                        <span class="price-new">$1,202.00</span>
+                                                                                                                    </div>
+                                                                                                                </div>
+                                                                                                            </div>
+                                                                                                        </div>
+                                                                                                    </div>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </div>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </li>
+                                                                    <li class="nav-item"><a class="nav-link" href="" >About</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="">Shop</a></li>
+                                                                    <li class="nav-item"><a class="nav-link" href="">Contact</a></li>
+                                                                </ul>
+                                                            </div>
+                                                        </nav>
+                                                    </div>
+                                                </div>
+                                                <div class="col-xl-3 col-lg-3 col-md-12 col-12">
+                                                    <div class="tv-bg-overlay"></div>
+                                                    <div id="tv-cart-top" class="float-end pull-right cart-right">
+                                                        <div class="tv-cart-top">
+                                                            <div id="cart" class="float-end pull-right clearfix">
+                                                                <div data-bs-toggle="dropdown" data-bs-display="static" data-loading-text="Loading..." class="heading tv-media dropdown-toggle">
+                                                                    <div class="cart-inner tv-media-body">
+                                                                        <a>
+                                                                            <i class="fas fa fa-shopping-basket fa-2x"></i>
+                                                                            <div class="wrap-cart">
+                                                                                <span class="text-cart">Shopping Cart</span><br>
+                                                                                <span id="cart-total" class="cart-total">0 item(s) - $0.00</span>
+                                                                                <i class="fas fa fa-angle-down"></i>
+                                                                            </div>
+                                                                        </a>
+                                                                    </div>
+                                                                </div>
+                                                                <ul class="dropdown-menu tv-cart-content">
+                                                                    <li>
+                                                                        <table class="table">
+                                                                            <tbody><tr>
+                                                                                    <td class="text-center"> 
+                                                                                        <a href="single-product.html"><img src="images/8-92x107.jpg" alt="image"></a>
+                                                                                    </td>
+                                                                                    <td class="text-start text-left"><a href="single-product.html">Volie Canvas Tote in Natural</a>
+                                                                                    </td>
+                                                                                    <td class="text-end text-right">x 1</td>
+                                                                                    <td class="text-end text-right">$38.00</td>
+                                                                                    <td class="text-center"><button type="button" title="Remove" class="btn btn-primary btn-sm btn-xs"><i class="fas fa fa-times"></i></button></td>
+                                                                                </tr>
+                                                                            </tbody>
+                                                                        </table>
+                                                                    </li>
+                                                                    <li>
+                                                                        <div class="table-responsive">
+                                                                            <table class="table table-v4">
+                                                                                <tbody><tr>
+                                                                                        <td class="text-end text-right"><strong>Sub-Total</strong></td>
+                                                                                        <td class="text-end text-right">$30.00</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="text-end text-right"><strong>Eco Tax (-2.00)</strong></td>
+                                                                                        <td class="text-end text-right">$2.00</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="text-end text-right"><strong>VAT (20%)</strong></td>
+                                                                                        <td class="text-end text-right">$6.00</td>
+                                                                                    </tr>
+                                                                                    <tr>
+                                                                                        <td class="text-end text-right"><strong>Total</strong></td>
+                                                                                        <td class="text-end text-right">$38.00</td>
+                                                                                    </tr>
+                                                                                </tbody></table>
+                                                                            <p class="text-center view-cart"><a href="cart.html" class="btn btn-primary w-100 btn-block">View Cart</a></p>
+                                                                            <p class="text-center view-cart"><a href="cart.html" class="btn bg-black w-100 btn-block">Checkout</a>
+                                                                            </p>
+                                                                        </div>
+                                                                    </li>
+                                                                </ul>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+        </header>
+        <main>
+                <div class="tv-left-offcanvas visible-sm visible-xs">
+                    <div class="container">
+                        <button data-tv-toggle="offcanvas" class="btn btn-primary visible-xs visible-sm" type="button"><i class="fas fa fa-bars"></i></button>
+                    </div>
+                </div>
+                <div class="sidebar-offcanvas visible-xs visible-sm">
+                    <div class="offcanvas-heading card-header panel-heading">
+                        <button data-tv-toggle="offcanvas" class="btn btn-primary visible-xs visible-sm" type="button"> <span class="fas fa fa-times"></span></button>
+                    </div>
+
+                    <div class="offcanvas-body card-body panel-body">
+                        <ul class="nav navbar-nav">
+                            <li><a href="index.html" >Home</a></li>
+                            <li class="dropdown">
+                                <i class="fas fa click-menu-open fa-plus-square"></i>
+                                <a class="dropdown-toggle" data-bs-toggle="dropdown" data-bs-display="static" href="product.html">store</a>
+                                <div class="dropdown-menu">
+                                    <div class="dropdown-menu-inner">
+                                        <div class="row">
+                                            <div class="mega-col col-12 col-md-12 col-lg-4"> 
+                                                <div class="mega-col-inner">
+                                                    <div class="tv-widget">
+                                                        <h5 class="widget-heading title">Men</h5>
+                                                        <div class="">
+                                                            <ul class="content">
+                                                                <li><a href="#"><span>Fragrance</span></a></li>
+                                                                <li><a href="#"><span>Makeup</span></a></li>
+                                                                <li><a href="#"><span>Skin care</span></a></li>
+                                                                <li><a href="#"><span>lystony</span></a></li>
+                                                                <li><a href="#"><span>Bath &amp; Body</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                    <div class="tv-widget">
+                                                        <h5 class="widget-heading title">Beauty</h5>
+                                                        <div class="">
+                                                            <ul class="content">
+                                                                <li><a href="#"><span>Sun Care &amp; Bronzers</span></a></li>
+                                                                <li><a href="#"><span>Accessories</span></a></li>
+                                                                <li><a href="#"><span>Tools &amp; Accessories</span></a></li>
+                                                                <li><a href="#"><span>Gifts &amp; Gift Sets</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mega-col col-12 col-md-12 col-lg-4"> 
+                                                <div class="mega-col-inner">
+                                                    <div class="tv-widget">
+                                                        <h5 class="widget-heading title">Women</h5>
+                                                        <div class="">
+                                                            <ul class="content">
+                                                                <li><a href="#"><span>Fragrance</span></a></li>
+                                                                <li><a href="#"><span>Makeup</span></a></li>
+                                                                <li><a href="#"><span>Skin care</span></a></li>
+                                                                <li><a href="#"><span>lystony</span></a></li>
+                                                                <li><a href="#"><span>Bath &amp; Body</span></a></li>
+                                                            </ul>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <li><a href="about.html" >About</a></li>
+                            <li><a href="product.html">Shop</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!--middle content-->
+                <div id="checkout-cart">
+                    <div class="container">
+                        <ul class="breadcrumb">
+                            <li><a href="index.html"><i class="fas fa fa-home"></i></a></li>
+                            <li>My account</li>
+                        </ul>
+                        <div class="row">
+                            <div id="content" class="col-md-12">
+
+<h1>My account</h1>
+<div class="row">
+  <div class="col-lg-3">
+    <div class="card card-body well tv-account-nav">
+      <p><strong>Sarah Whitfield</strong><br><small>Customer since 2021</small></p>
+      <ul class="nav flex-column" role="tablist">
+        <li><a class="active" href="#orders" data-bs-toggle="tab" role="tab"><i class="fas fa fa-shopping-bag"></i> Orders</a></li>
+        <li><a href="#addresses" data-bs-toggle="tab" role="tab"><i class="fas fa fa-map-marker-alt"></i> Addresses</a></li>
+        <li><a href="#details" data-bs-toggle="tab" role="tab"><i class="fas fa fa-user"></i> Account details</a></li>
+        <li><a href="#password" data-bs-toggle="tab" role="tab"><i class="fas fa fa-key"></i> Password</a></li>
+        <li><a href="wishlist.html"><i class="fas fa fa-heart"></i> Wish list</a></li>
+        <li><a href="login.html"><i class="fas fa fa-sign-out-alt"></i> Log out</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-lg-9">
+    <div class="tab-content">
+      <div class="tab-pane active" id="orders" role="tabpanel">
+        <h2>Your orders</h2>
+        <div class="table-responsive"><table class="table table-bordered tv-orders">
+          <thead><tr><td>Order</td><td>Date</td><td>Items</td><td class="text-end text-right">Total</td><td>Status</td><td></td></tr></thead>
+          <tbody>
+            <tr><td>#WD-10482</td><td>Today</td><td>Wrap Midi Dress, Merino Crew Jumper ×2</td><td class="text-end text-right">$300.00</td><td><span class="badge label label-warning tv-badge-processing">Being packed</span></td><td><a href="thank-you.html">View</a></td></tr>
+            <tr><td>#WD-10311</td><td>2 Sep 2026</td><td>Tapered Chino Trousers</td><td class="text-end text-right">$96.00</td><td><span class="badge label label-success tv-badge-done">Delivered</span></td><td><a href="thank-you.html">View</a></td></tr>
+            <tr><td>#WD-09877</td><td>14 Jun 2026</td><td>Linen Summer Blazer, Canvas Weekend Tote</td><td class="text-end text-right">$210.00</td><td><span class="badge label label-success tv-badge-done">Delivered</span></td><td><a href="thank-you.html">View</a></td></tr>
+            <tr><td>#WD-09402</td><td>2 May 2026</td><td>Rose Petal Eau de Parfum</td><td class="text-end text-right">$64.00</td><td><span class="badge label label-success tv-badge-done">Delivered</span></td><td><a href="thank-you.html">View</a></td></tr>
+          </tbody>
+        </table></div>
+      </div>
+      <div class="tab-pane" id="addresses" role="tabpanel">
+        <h2>Addresses</h2>
+        <div class="row">
+          <div class="col-md-6"><div class="card card-body well"><h3>Delivery <span class="badge label label-default">default</span></h3><p>Sarah Whitfield<br>14 Orchard Road<br>Old Town, OT1 2AB<br>United Kingdom</p><a href="#addresses" class="btn btn-secondary btn-default btn-sm">Edit</a></div></div>
+          <div class="col-md-6"><div class="card card-body well"><h3>Billing</h3><p>Sarah Whitfield<br>14 Orchard Road<br>Old Town, OT1 2AB<br>United Kingdom</p><a href="#addresses" class="btn btn-secondary btn-default btn-sm">Edit</a></div></div>
+        </div>
+      </div>
+      <div class="tab-pane" id="details" role="tabpanel">
+        <h2>Account details</h2>
+        <form action="#" novalidate class="card card-body well">
+          <div class="row"><div class="col-md-6"><div class="form-group"><label class="form-label control-label" for="acc-firstname">First name</label><input name="acc-firstname" id="acc-firstname" class="form-control" type="text" required value="Sarah"></div></div><div class="col-md-6"><div class="form-group"><label class="form-label control-label" for="acc-lastname">Last name</label><input name="acc-lastname" id="acc-lastname" class="form-control" type="text" required value="Whitfield"></div></div></div>
+          <div class="row"><div class="col-md-6"><div class="form-group"><label class="form-label control-label" for="acc-email">E-mail</label><input name="acc-email" id="acc-email" class="form-control" type="email" required value="sarah@example.com"></div></div><div class="col-md-6"><div class="form-group"><label class="form-label control-label" for="acc-telephone">Telephone</label><input name="acc-telephone" id="acc-telephone" class="form-control" type="tel" value="1-202-555-0199"></div></div></div>
+          <div class="checkbox"><label><input type="checkbox" name="newsletter" checked> Send me the newsletter</label></div>
+          <button type="submit" class="btn btn-primary">Save changes</button>
+          <p class="tv-form-note" role="status" tabindex="-1" hidden>Saved.</p>
+        </form>
+      </div>
+      <div class="tab-pane" id="password" role="tabpanel">
+        <h2>Change password</h2>
+        <form action="#" novalidate class="card card-body well">
+          <div class="form-group"><label class="form-label control-label" for="current">Current password</label><input name="current" id="current" class="form-control" type="password" required></div>
+          <div class="form-group"><label class="form-label control-label" for="newpass">New password</label><input name="newpass" id="newpass" class="form-control" type="password" required minlength="8"></div>
+          <div class="form-group"><label class="form-label control-label" for="confirmpass">Confirm new password</label><input name="confirmpass" id="confirmpass" class="form-control" type="password" required minlength="8"></div>
+          <button type="submit" class="btn btn-primary">Change password</button>
+          <p class="tv-form-note" role="status" tabindex="-1" hidden>Password changed.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+        </main>
+            <footer class="tv-footer-bg">
+                                <div class="tv-footer-top">
+                                    <div class="container">
+                                        <div class="row tv-footer-block">
+                                            <div class="col1 col-lg-5 col-md-12 col-footer-bottomspace">
+                                                <div class="tv-footer-title">about us</div>
+                                                <div class="tv-footer-content">
+                                                    <p class="des">
+                                                        Wrapd-Style is an independent clothing and beauty store. Everything we sell we have worn, washed and tried ourselves; orders ship within two days and returns are free for thirty.
+                                                        <a href="about.html">Readmore</a>
+                                                    </p>
+                                                    <div class="tv-social-follow">
+                                                        <label>Follow Us On Social:</label>
+                                                        <ul class="link-follow">
+                                                            <li class="first"><a class="fab fa twitter fa-twitter" title="Twitter" href=""></a></li>
+                                                            <li><a class="fab fa google fa-google-plus-g" title="Google" href=""></a></li>
+                                                            <li><a class="fab fa facebook fa-facebook-f" title="Facebook" href=""></a></li>
+                                                            <li><a class="fab fa youtube fa-youtube" title="Youtube" href=""></a></li>
+                                                            <li><a class="fab fa flickr fa-flickr" title="Flickr" href=""></a></li>
+                                                        </ul>
+                                                    </div>																	 									 									 									 									
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-footer-bottomspace">
+                                                <div class="tv-footer-title">Information</div>
+                                                <div class="tv-footer-content">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="about.html">About Us</a></li>
+                                                        <li><a href="faq.html#delivery">Delivery Information</a></li>
+                                                        <li><a href="faq.html#privacy">Privacy Policy</a></li>
+                                                        <li><a href="faq.html#terms">Terms &amp; Conditions</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-2 col-md-4 col-footer-bottomspace">
+                                                <div class="tv-footer-title">Customer Service</div>
+                                                <div class="tv-footer-content">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="contact.html">Contact Us</a></li>
+                                                        <li><a href="faq.html#returns">Returns</a></li>
+                                                        <li><a href="index.html">Site Map</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg-3 col-md-4 col-footer-bottomspace">
+                                                <div class="tv-footer-title">Extras</div>
+                                                <div class="tv-footer-content">
+                                                    <ul class="list-unstyled">
+                                                        <li><a href="product.html">Brands</a></li>
+                                                        <li><a href="faq.html#gift-certificates">Gift Certificates</a></li>
+                                                        <li><a href="faq.html#affiliates">Affiliate</a></li>
+                                                        <li><a href="product.html">Specials</a></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+            
+                                        </div>
+            
+                                    </div>
+                                </div>
+                                <div class="tv-footer-bottom">
+                                    <div class="container">
+                                        <div class="copyright">
+                                            &copy; <span id="tv-year">2026</span> All right reserved.</div>
+                                    </div>
+                                </div>
+                            </footer>
+            <button type="button" id="back-to-top" aria-label="Back to top"><i class="fas fa-angle-up" aria-hidden="true"></i></button>
+            </div>
+        </div>
+
+
+        <script src="js/bootstrap.bundle.min.js" defer></script>
+        <script src="js/main.js" defer></script>
+    </body>
+</html>

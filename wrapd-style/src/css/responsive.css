@@ -1,0 +1,208 @@
+/*
+Template Name: demo7
+File Name: responsive.css
+Author Name: ThemeVault
+Author URI: http://www.themevault.net/
+License URI: http://www.themevault.net/license/
+*/
+
+/* Landscape phones and smaller */
+
+@media only screen and (min-width: 1200px) and (max-width: 1300px) {}
+
+@media only screen and (min-width: 1200px) {
+    .tv-single-product-right {
+        padding-left: 100px;
+    }
+}
+@media only screen and (min-width: 992px) and (max-width: 1199px) {
+    .tv-action-btn button, .tv-action-btn a {
+        font-size: 14px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}
+@media only screen and (max-width: 991px) {
+    .navbar {
+        margin-bottom: 0;
+    }
+    .tv-footer-top {
+        padding: 70px 0 30px;
+    }
+    #searchbox {
+        width: 97%;
+    }
+    .text2 {
+        padding-left: 10px;
+    }
+    .tv-header-right .text2-dec {
+        font-size: 13px;
+    }
+    .header-search #searchbox::before {
+        border-left: none;
+    }
+    .quantity-box, .tv-action #button-cart, .tv-action label.control-label {
+        margin-right: 5px;
+    }
+}
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+
+}
+
+@media only screen and (max-width: 767px) {
+    .tv-logo {
+        display: block;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+    #tv-main-header {
+        padding: 25px 0 20px;
+    }
+    .header-search {
+        clear: both;
+        float: none;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+        width: 300px;
+    }
+    #search .input-lg {
+        padding-left: 10px;
+    }
+    #searchbox {
+        width: 94%;
+    }
+    .tv-footer-title {
+        font-size: 13px;
+    }
+    .tv-image img {
+        margin-bottom: 15px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tv-offer-cms1, .tv-box-newarrival, .tv-product-banner, .tv-box-mens-wear, .tv-box-womens-wear, .tv-box-child-wear {
+        margin-bottom: 50px;
+    }
+    .tv-action-btn button, .tv-action-btn a, .tv-footer-bottom .copyright {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 14px;
+    }
+    .product-name a {
+        font-size: 16px;
+    }
+
+
+    .tv-l-padd-zero {
+        padding-left: 15px;
+    }
+    .tv-offspace-30.tv-lr-padd-zero {
+        margin-top: 0;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+    .navbar-toggle {
+        border-radius: 0;
+        font-size: 20px;
+        margin-bottom: 8px;
+        margin-right: 0;
+        margin-top: -33px;
+        padding: 0;
+    }
+    .navbar-nav > li > a {
+        font-size: 13px;
+        padding: 6px 5px;
+    }
+    .tv-module-title, .module-tab-product-category .tv-module-title, .tv-newletter, .tv-offspace-110 {
+        margin-top: 65px;
+    }
+    .tv-newletter {
+        padding-top: 65px;
+    }
+    footer {
+        margin-top: 80px;
+    }
+    .tv-footer-top {
+        padding: 50px 0 0;
+    }
+    #subscribe_email {
+        padding-right: 120px;
+        width: 400px;
+    }
+    #tv-subscribe .btn {
+        padding: 0 20px;
+    }
+    #checkout-cart h1 {
+        font-size: 20px;
+    }
+    h2 {
+        font-size: 18px;
+    }
+    .tv-pannel-default img {
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .product-thumb .item-inner {
+        text-align: center;
+    }
+    .product-thumb .images-container {
+        display: inline-block;
+        text-align: center;
+    }
+    .product-list .product-thumb .images-container, .product-list .product-thumb .caption {
+        float: none;
+        width: auto;
+    }
+    .product-list .product-thumb .caption {
+        padding: 0;
+        text-align: center;
+    }
+    .tv-pro-info .nav-tabs > li {
+        margin: 0 5px -4px 0;
+    }
+    .quantity-box {
+        margin-bottom: 15px;
+    }
+}
+@media only screen and (min-width: 480px) and (max-width: 767px) {
+
+    .tv-box-newarrival .row_items {
+        float: left;
+        width: 50%;
+    }
+    .tv-box-newarrival .row_items:nth-of-type(2n+1) {
+        clear: left;
+    }
+    .col-footer-bottomspace + .col-footer-bottomspace {
+        float: left;
+        width: 33.33%;
+    }
+    .tv-footer-top {
+        padding-bottom: 20px;
+    }
+}
+@media only screen and (min-width: 600px) and (max-width: 767px) {
+    .product-grid {
+        width: 50%;
+    }
+    .product-grid:nth-of-type(2n+1) {
+        clear: left;
+    }
+
+}
+@media only screen and (max-width: 479px) {
+    #subscribe_email {
+        width: 290px;
+    }
+}
+@media only screen and (max-width: 600px) {
+
+}
+@media only screen and (max-width: 500px) {
+    .tv-newletter-title h4 {
+        font-size: 20px;
+    }
+}
+@media only screen and (max-width: 400px) {
+
+}

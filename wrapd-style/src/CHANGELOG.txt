@@ -1,0 +1,29 @@
+Wrap-d-Style — Online Store Website Template
+=============================================
+
+Version 2.0 — 2026
+-------------------
+
+- Rebuilt on Bootstrap 5 with no jQuery: the menu, mega menu, cart panel,
+  off-canvas menu, product tabs, accordions and the four product sliders are
+  plain JavaScript (js/main.js).
+- Eight new pages the seven-page store pointed at but never had: checkout,
+  order confirmed (thank-you.html), about, contact (form + map), my account
+  (orders, addresses, details, password), wish list with compare, help &
+  delivery (the footer's Delivery / Returns / Privacy / Terms / Gift
+  certificates / Affiliate links point into it) and a 404 page with search.
+- Two ready-to-send HTML emails: order confirmation and newsletter welcome.
+- Every form validates and confirms (login and register land on the
+  account page; coupon, voucher and shipping-quote buttons respond).
+- Pagination on the product grid and list pages; on phones the sidebar
+  sits above the grid as accordions (the original hid it).
+- Real copy for a clothing store in place of 111 lorem-ipsum blocks and the
+  original's OpenCart demo text; product cards share one photo box so the
+  grids run even; 494 dead links repaired; one h1 and a meta description on
+  every page (the original had neither on any page).
+- Tablet and phone: full-width banners at a banner height, the Mens / Womens
+  / Kids sections stack with a 3-up (tablet) / 2-up (phone) product strip,
+  the footer's link lists sit two-up on phones.
+- Source Sans Pro and Josefin Sans self-hosted (the original fetched them
+  live from Google); Font Awesome 4 -> 6; 985 KB of legacy font files
+  dropped.

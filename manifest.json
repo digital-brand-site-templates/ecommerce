@@ -82,6 +82,39 @@
           "TVORD30331596 Pro \u2014 Lifetime"
         ]
       }
+    },
+    {
+      "name": "Wrapd-Style",
+      "folder": "wrapd-style",
+      "version": "2.0.0",
+      "description": "Wrapd-Style \u2013 static HTML/Bootstrap eCommerce website template.",
+      "idealFor": [
+        "online clothing stores",
+        "fashion boutiques",
+        "menswear and womenswear retailers",
+        "kids clothing shops"
+      ],
+      "requiredClientInputs": [
+        "storeName",
+        "logoUrl",
+        "primaryColorHex",
+        "contactEmail",
+        "phoneNumber",
+        "storeAddress",
+        "productCatalog",
+        "productImages",
+        "shippingAndReturnsPolicy",
+        "socialLinks"
+      ],
+      "preview": "wrapd-style/preview.png",
+      "orderNumber": "TVORD30831662",
+      "license": {
+        "templateOrderAmount": 0.0,
+        "creditRemovalPermitted": true,
+        "accountLicense": [
+          "TVORD30331596 Pro \u2014 Lifetime"
+        ]
+      }
     }
   ]
 }

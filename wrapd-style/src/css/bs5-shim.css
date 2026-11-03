@@ -1,0 +1,192 @@
+/* ==========================================================================
+   Bootstrap 5 shim — loaded AFTER the template's CSS: the hooks main.js
+   uses, then this template's own fixes (each one names the GATES.md line or
+   owner note it answers). The neutral Bootstrap 3 defaults live in
+   bs3-defaults.css, loaded before style.css — never restate them here.
+   ========================================================================== */
+
+/* Hooks main.js uses. */
+.tv-preload *, .tv-preload *::before, .tv-preload *::after { transition: none !important; animation-duration: 0s !important; } /* released by main.js one frame after load */
+.tv-nohover .dropdown-menu:not(.show) { opacity: 0 !important; visibility: hidden !important; pointer-events: none !important; } /* a hover-opened menu stays shut until the first mousemove / touch (main.js) — the cursor may be resting on the nav when the page paints */
+#back-to-top { display: none; position: fixed; right: 20px; bottom: 20px; z-index: 999; width: 44px; height: 44px; border: 0; border-radius: 50%; background: #b11e22; color: #fff; font: inherit; cursor: pointer; }
+#back-to-top.is-visible { display: block; }
+.tv-form-note { color: #b11e22; margin: 15px 0 0; font-size: 14px; font-weight: 600; }
+.form-control.is-invalid, select.is-invalid, textarea.is-invalid, input.is-invalid { border-color: #dc3545 !important; }
+.tv-lightbox { position: fixed; inset: 0; z-index: 99999; display: none; align-items: center; justify-content: center; background: rgba(0, 0, 0, .92); }
+.tv-lightbox.is-open { display: flex; }
+.tv-lightbox img { max-width: 92vw; max-height: 84vh; box-shadow: 0 10px 40px rgba(0, 0, 0, .6); }
+.tv-lightbox button { position: absolute; border: 0; background: transparent; color: #fff; font-size: 34px; line-height: 1; cursor: pointer; opacity: .8; padding: 10px; }
+.tv-lb-close { top: 10px; right: 20px; font-size: 42px; } .tv-lb-prev { left: 10px; top: 50%; transform: translateY(-50%); } .tv-lb-next { right: 10px; top: 50%; transform: translateY(-50%); }
+.tv-section-pb { padding-bottom: 80px; } /* for new pages whose last section needs a floor */
+
+/* ==========================================================================
+   This template — every rule below names the gate line or owner note it
+   answers. Start empty; grow it from GATES.md, never from another template.
+   ========================================================================== */
+
+/* ---- wrap-d-style: this template ---- */
+h1.box-heading { font-size: 32px; } /* the home h1 (was h2) — .box-heading sets everything else */
+h1.tv-h2 { font-size: 27px; } /* an inner-page h1 that was v1's h2 (login): drawn at the h2 size */
+@media (max-width: 767px) { h1.tv-h2 { font-size: 18px; } } /* responsive.css's h2 step */
+.banner-image img, .tv-product-banner img, .tv-product-banner-one img { width: 100%; } /* v1 shipped 1450px hero and band images and left a white strip beyond them on wide screens (owner notes) */
+#tv-subscribe .tv-form-note { margin-top: 10px; color: #fff; }
+/* slider arrows: v1 drew FA4's angle glyph (font "FontAwesome"); FA6's is heavier and sits off-centre in the 24px box — the same glyph, centred */
+.owl-nav > div::before { font-family: "Font Awesome 6 Free"; font-weight: 900; font-size: 14px; left: 0; top: 0; width: 24px; line-height: 24px; text-align: center; }
+.tv-offer-cms1 { margin-top: 30px; }
+/* owner (improvement): tablet and phone — the banners fill their width at a height that reads as a banner, the wear sections stack */
+@media (max-width: 991.98px) {
+  .banner-image img, .tv-product-banner img, .tv-product-banner-one img { width: 100%; object-fit: cover; object-position: 65% 50%; }
+  .banner-image img { height: 420px; }
+  .tv-product-banner img, .tv-product-banner-one img { height: 200px; object-position: left center; } /* the band's words are baked into the image at its left */
+  .tv-wear-photo img { width: 100%; height: 360px; object-fit: cover; object-position: 50% 20%; }
+  .tv-wear-copy { margin-top: 24px; }
+  .tv-wear-copy .tv-box-head-title { text-align: center; }
+  .tv-wear-copy .owl-nav { top: -46px; }
+  .tv-offer-cms1 .tv-image img { width: 100%; }
+}
+@media (max-width: 575.98px) {
+  /* footer (owner improvement): the three link lists two-up instead of a 900px stack; tighter rhythm; centred credit */
+  footer .tv-footer-block > .col-footer-bottomspace:not(.col1) { flex: 0 0 50%; width: 50%; margin-bottom: 18px; }
+  footer .tv-footer-block > .col1 { margin-bottom: 24px; padding-bottom: 20px; border-bottom: 1px solid rgba(255, 255, 255, .08); }
+  footer .tv-footer-title { margin-bottom: 10px; }
+  footer .tv-footer-content ul li, footer .tv-footer-content li { line-height: 30px; }
+  footer .tv-footer-top { padding-bottom: 10px; }
+  .footer-copyright, footer .copyright { text-align: center; }
+  .banner-image img { height: 300px; }
+  .tv-product-banner img, .tv-product-banner-one img { height: 150px; }
+  .tv-wear-photo img { height: 260px; }
+  .tv-offer-cms1 .tv-image { margin-bottom: 16px; }
+} /* owner: room between the hero and the three offer boxes (v1 had them flush) */
+.product-thumb .image img { display: block; width: 100%; margin: 0; aspect-ratio: 4 / 5; object-fit: cover; object-position: 50% 12%; } /* owner: the tile photo fills its box (v1 left 1px each side) and every card shares one 4:5 photo box — v1 mixed 268x436 and 268x304 photos, so the grids ran uneven */
+/* the cart panel's Checkout: v1 named it .bg-black with no such rule (a plain white button); BS5 has a .bg-black utility and painted it. Plain again, and the reverse the owner asked for on hover */
+.tv-cart-content .btn.bg-black { background-color: transparent !important; color: #151515; border: 1px solid #151515; transition: all .2s; }
+.tv-cart-content .btn.bg-black:hover, .tv-cart-content .btn.bg-black:focus { background-color: #151515 !important; color: #fff; }
+
+/* ---- wrap-d-style: new pages ---- */
+#checkout-cart #content .well h2 { font-size: 18px; margin-top: 0; }
+#checkout-cart #content .well h3 { font-size: 15px; font-weight: 600; margin-top: 0; }
+#checkout-cart .well .form-group { margin-bottom: 15px; }
+#checkout-cart .well .form-control { height: 40px; }
+#checkout-cart .well textarea.form-control { height: auto; }
+#checkout-cart .well .radio, #checkout-cart .well .checkbox { margin: 6px 0; }
+.tv-secure { margin: 12px 0 0; font-size: 12px; color: #808080; }
+.tv-steps { list-style: none; padding: 0; margin: 15px 0 20px; }
+.tv-steps li { padding: 8px 0; border-bottom: 1px dashed #e7e7e7; }
+.tv-steps li i { color: #b11e22; width: 22px; }
+.tv-steps li span { color: #808080; }
+.tv-facts { display: grid; grid-template-columns: 110px 1fr; gap: 6px 12px; margin: 0; font-size: 13px; }
+.tv-facts dt { font-weight: 600; color: #151515; }
+.lead { font-size: 16px; font-weight: 400; line-height: 1.6; }
+.tv-about-photo { width: 100%; margin-bottom: 20px; }
+.tv-map iframe { border: 0; margin-top: 10px; }
+.tv-account-nav .nav li a { display: block; padding: 8px 6px; color: #151515; border-radius: 2px; }
+.tv-account-nav .nav li a i { width: 22px; color: #b11e22; }
+.tv-account-nav .nav li a:hover, .tv-account-nav .nav li a.active { background: #f4f4f4; color: #b11e22; }
+.tv-badge-processing { background: #b11e22 !important; color: #fff; }
+.tv-badge-done { background: #1b252f !important; color: #fff; }
+.tv-orders td { vertical-align: middle; }
+.tv-compare thead td { background: #1b252f; color: #fff; } .tv-compare thead td a, .tv-compare thead td strong { color: #fff; }
+#checkout-cart .table img.img-thumbnail { width: 90px; height: auto; } .tv-compare img.img-thumbnail { width: 120px; }
+@media (max-width: 767.98px) { .tv-orders { min-width: 640px; } #checkout-cart .table-responsive > .table { min-width: 560px; } }
+.tv-compare tbody td:first-child { font-weight: 600; background: #f9f9f9; width: 160px; }
+.tv-rating i { color: #f4b400; }
+.tv-faq-nav .nav li a { display: block; padding: 6px 0; color: #151515; border-bottom: 1px dashed #e7e7e7; }
+.tv-faq-nav .nav li:last-child a { border-bottom: 0; }
+.tv-faq section { padding: 6px 0 18px; border-bottom: 1px solid #ececec; margin-bottom: 18px; scroll-margin-top: 20px; }
+.tv-faq section:last-child { border-bottom: 0; }
+.tv-faq h2 { font-size: 20px; margin-top: 0; }
+.tv-404 { padding: 20px 0 40px; }
+.tv-404-code { font-family: 'Josefin Sans', sans-serif; font-size: 96px; line-height: 1; color: #b11e22; margin: 0 0 6px; font-weight: 700; }
+.tv-404-search { display: flex; gap: 8px; max-width: 460px; margin: 0 0 20px; }
+.tv-404-search .form-control { flex: 1 1 auto; height: 40px; }
+.tv-404-links { list-style: none; padding: 0; margin: 0; }
+.tv-404-links li { padding: 8px 0; border-bottom: 1px dashed #e7e7e7; color: #808080; }
+.tv-404-links a { color: #151515; font-weight: 600; }
+.tv-404-links li:last-child { border-bottom: 0; }
+@media (max-width: 991.98px) { .tv-account-nav, .tv-faq-nav { margin-bottom: 20px; } .tv-account-nav .nav, .tv-faq-nav .nav { flex-direction: row !important; flex-wrap: wrap; gap: 4px 16px; } .tv-faq-nav .nav li a { border: 0; } }
+@media (max-width: 575.98px) { .tv-404-code { font-size: 72px; } .tv-facts { grid-template-columns: 1fr; gap: 2px; } .tv-facts dd { margin-bottom: 8px; } }
+
+/* ---- wrap-d-style: v1 behaviours (css) ---- */
+/* the cart panel: v1 slid it in on BS3's .open; BS5 sets .show on the same parent */
+.tv-cart-top .show .dropdown-menu, .tv-cart-top .dropdown-menu.show { transform: translate3d(0, 0, 0); }
+.tv-cart-top .dropdown-menu { right: 0; left: auto; }
+/* off-canvas submenu: v1's static block dropped below the floated "store" link and its +/- icon; BS5's .dropdown-menu float rules put it beside them */
+.offcanvas-body .dropdown-menu { clear: both; float: none; position: static; }
+
+/* ---- wrap-d-style: round 2 (improvements) ---- */
+/* 3 / 17) shop sidebar on phones: accordions above the grid */
+@media (max-width: 767.98px) {
+  #product-category .row > #content { order: 2; }
+  .tv-sidebar { order: 1; display: block; padding-bottom: 0; }
+  .tv-sidebar .tv-box, .tv-sidebar .card.panel { margin-bottom: 8px; }
+  .tv-sidebar .tv-box-heading, .tv-sidebar .panel-heading { cursor: pointer; position: relative; }
+  .tv-sidebar .tv-box-heading::after, .tv-sidebar .panel-heading::after { content: "\f078"; font-family: "Font Awesome 6 Free"; font-weight: 900; font-size: 11px; position: absolute; right: 12px; top: 50%; transform: translateY(-50%); transition: transform .2s; }
+  .tv-sidebar .tv-acc.is-open > .tv-box-heading::after, .tv-sidebar .tv-acc.is-open > .panel-heading::after { transform: translateY(-50%) rotate(180deg); }
+  .tv-sidebar .tv-acc > :not(.tv-box-heading):not(.panel-heading) { display: none; }
+  .tv-sidebar .tv-acc.is-open > :not(.tv-box-heading):not(.panel-heading) { display: block; }
+}
+/* pagination (owner): v1 printed only "Showing 1 to 4 of 4" */
+.tv-pagination { display: flex; gap: 4px; margin: 0; padding: 0; list-style: none; }
+.tv-pagination li a, .tv-pagination li span { display: block; min-width: 34px; height: 34px; line-height: 32px; padding: 0 10px; text-align: center; border: 1px solid #e7e7e7; color: #151515; border-radius: 2px; }
+.tv-pagination li.active a, .tv-pagination li a:hover { background: #b11e22; border-color: #b11e22; color: #fff; }
+@media (max-width: 767.98px) { .tv-pagination { justify-content: center; margin-bottom: 10px; } .tv-showing { text-align: center !important; } }
+/* 14) help page sidebar: sticky, the section you are in marked */
+@media (min-width: 992px) { .tv-faq-nav { position: sticky; top: 20px; } }
+.tv-faq-nav .nav li a { padding-left: 10px; border-left: 3px solid transparent; }
+.tv-faq-nav .nav li a.is-current, .tv-faq-nav .nav li a:hover { border-left-color: #b11e22; color: #b11e22; }
+/* 11) my account: the nav as a proper menu, a rhythm to the tables */
+.tv-account-nav { padding: 0; overflow: hidden; }
+.tv-account-nav > p { padding: 18px 20px 14px; margin: 0; background: #1b252f; color: #fff; }
+.tv-account-nav > p small { color: rgba(255, 255, 255, .6); }
+.tv-account-nav .nav { padding: 8px 0; }
+.tv-account-nav .nav li a { padding: 10px 20px; border-radius: 0; border-left: 3px solid transparent; }
+.tv-account-nav .nav li a.active { border-left-color: #b11e22; background: #f7f7f7; }
+.tv-orders td, .tv-orders thead td { padding: 12px 10px; }
+.tv-orders thead td { background: #f7f7f7; font-weight: 600; }
+.tv-orders tbody tr:hover td { background: #fcfcfc; }
+/* 5) product page on phones: the action row and the tabs */
+@media (max-width: 575.98px) {
+  .tv-action { display: flex; flex-wrap: wrap; align-items: center; gap: 8px; }
+  .tv-action .quantity-box { flex: 1 1 auto; }
+  .tv-action #button-cart { flex: 1 1 100%; margin: 0; }
+  .tv-action .btn-wishlist, .tv-action .btn-compare { flex: 1 1 calc(50% - 4px); margin: 0; }
+  .tv-pro-info .nav-tabs { display: flex; }
+  .tv-pro-info .nav-tabs > li { flex: 1 1 auto; float: none; text-align: center; }
+  .tv-pro-info .nav-tabs > li > a { padding: 10px 6px; }
+}
+/* 7 / 9 / 10 / 12 / 13) shop pages on phones: tables scroll, buttons stack full width, panels breathe less */
+@media (max-width: 575.98px) {
+  #checkout-cart .table-responsive { -webkit-overflow-scrolling: touch; }
+  #checkout-cart .table-responsive > .table { min-width: 620px; }
+  #checkout-cart .tv-order-summary .table, #checkout-cart .tv-orders + *, #checkout-cart .well .table-responsive > .table { min-width: 0; }
+  #checkout-cart .buttons .float-start, #checkout-cart .buttons .float-end, #checkout-cart .buttons .pull-left, #checkout-cart .buttons .pull-right { float: none !important; width: 100%; margin: 0 0 8px; }
+  #checkout-cart .buttons .btn, #checkout-cart .well > .btn, #checkout-cart .well > .btn + .btn { display: block; width: 100%; margin: 0 0 8px; }
+  .tv-404 .btn { display: block; width: 100%; margin: 0 0 8px; }
+  #checkout-cart .well { padding: 15px; }
+  #checkout-cart .tv-order-summary { margin-top: 10px; }
+  .tv-compare { min-width: 520px; }
+  .tv-compare tbody td:first-child { width: 110px; }
+  .tv-facts { grid-template-columns: 1fr; }
+  .tv-account-nav .nav { padding: 4px 8px; }
+  .tv-account-nav .nav li a { padding: 8px 10px; border-left: 0; }
+  .tv-account-nav .nav li a.active { background: #f0f0f0; border-radius: 3px; }
+}
+
+/* ---- wrap-d-style: round 2b ---- */
+.tv-faq-nav { padding: 6px 20px; }
+.tv-faq-nav .nav, .tv-account-nav .nav { padding: 0; margin: 0; }
+.tv-faq-nav .nav li, .tv-account-nav .nav li { line-height: 1.4; }
+.tv-faq-nav .nav li a { padding: 9px 0 9px 10px; }
+.tv-account-nav .nav li a { padding: 9px 20px; }
+.tv-account-nav > p { padding: 14px 20px 12px; line-height: 1.4; }
+
+/* ---- wrap-d-style: round 2c ---- */
+.tv-account-nav .nav li a, .tv-faq-nav .nav li a { margin-top: 0; }
+.tv-account-nav .nav li a { padding: 8px 20px; }
+.tv-faq-nav .nav li a { padding: 8px 0 8px 10px; }
+#accordion .panel-body { padding: 15px; }
+#accordion .panel-body .input-group { width: 100%; }
+#accordion .panel-body .input-group .form-control { height: 36px; }
+#accordion .panel-heading { padding: 10px 15px; }
+#accordion .panel-title > a { font-size: 14px; }
+#accordion .form-horizontal .form-group, #collapse-shipping .form-group { margin-bottom: 12px; }
